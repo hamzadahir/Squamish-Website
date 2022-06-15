@@ -2,3 +2,16 @@
   @apply text-primary;
   font-family: Roboto, sans-serif;
 }
+
+h2 {
+  // font-size: 80px
+  @apply mb-4 text-3xl md:text-5xl lg:text-[80px] leading-snug font-light;
+  span {
+    @apply font-bold;
+  }
+}
+
+p {
+  // font-size: 30px
+  @apply mb-4 text-[15px] md:text-xl lg:text-3xl font-light;
+}
