@@ -532,6 +532,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
+.\!mt-0 {
+  margin-top: 0px !important;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.\!mt-2 {
+  margin-top: 0.5rem !important;
+}
+
 .block {
   display: block;
 }
@@ -544,8 +560,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .h-4 {
   height: 1rem;
+}
+
+.h-44 {
+  height: 11rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[3px\] {
+  height: 3px;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-28 {
@@ -562,6 +598,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4 {
   width: 1rem;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-5xl {
@@ -603,12 +655,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: flex-start;
 }
 
+.\!items-start {
+  align-items: flex-start !important;
+}
+
 .items-end {
   align-items: flex-end;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-between {
@@ -631,6 +691,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.\!space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0 !important;
+  margin-right: calc(0px * var(--tw-space-x-reverse)) !important;
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse))) !important;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-b {
@@ -862,12 +948,24 @@ p {
     display: flex;
   }
 
+  .md\:\!flex {
+    display: flex !important;
+  }
+
   .md\:hidden {
     display: none;
   }
 
+  .md\:\!hidden {
+    display: none !important;
+  }
+
   .md\:h-8 {
     height: 2rem;
+  }
+
+  .md\:h-44 {
+    height: 11rem;
   }
 
   .md\:w-44 {
@@ -890,12 +988,24 @@ p {
     width: 2rem;
   }
 
+  .md\:w-10\/12 {
+    width: 83.333333%;
+  }
+
   .md\:max-w-\[280px\] {
     max-width: 280px;
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
