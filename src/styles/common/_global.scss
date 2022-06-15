@@ -5,7 +5,7 @@
 
 h2 {
   // font-size: 80px
-  @apply mb-4 text-3xl md:text-5xl lg:text-[80px] leading-snug font-light;
+  @apply mb-4 text-3xl lg:text-5xl xl:text-[80px] leading-snug md:leading-snug lg:leading-snug font-light;
   span {
     @apply font-bold;
   }
@@ -13,5 +13,17 @@ h2 {
 
 p {
   // font-size: 30px
-  @apply mb-4 text-[15px] md:text-xl lg:text-3xl font-light;
+  @apply mb-4 text-[15px] lg:text-xl xl:text-3xl font-light;
+}
+
+
+.square-big {
+  @apply mt-12 md:mt-28 w-12 md:w-28 h-12 md:h-28 bg-secondary;
+}
+
+.square-small {
+  @apply mt-8 flex items-center space-x-2;
+  div {
+    @apply w-4 md:w-8 h-4 md:h-8 bg-secondary;
+  }
 }

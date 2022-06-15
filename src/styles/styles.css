@@ -502,12 +502,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .block {
@@ -542,13 +564,43 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+
+.max-w-\[180px\] {
+  max-width: 180px;
+}
+
 .translate-y-1\/2 {
   --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-1\/4 {
+  --tw-translate-x: 25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -573,6 +625,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .border-b {
@@ -601,6 +659,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /** Import theme styles */
@@ -651,12 +731,18 @@ h2 {
 
 @media (min-width: 768px) {
   h2 {
-    font-size: 3rem;
-    line-height: 1;
+    line-height: 1.375;
   }
 }
 
 @media (min-width: 1024px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 1.375;
+  }
+}
+
+@media (min-width: 1280px) {
   h2 {
     font-size: 80px;
   }
@@ -672,17 +758,59 @@ p {
   font-weight: 300;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   p {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   p {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+.square-big {
+  margin-top: 3rem;
+  height: 3rem;
+  width: 3rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 31 39 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .square-big {
+    margin-top: 7rem;
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+.square-small {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.square-small > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.square-small div {
+  height: 1rem;
+  width: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 31 39 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .square-small div {
+    height: 2rem;
+    width: 2rem;
   }
 }
 
@@ -717,6 +845,11 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -757,13 +890,60 @@ p {
     width: 2rem;
   }
 
+  .md\:max-w-\[280px\] {
+    max-width: 280px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:leading-snug {
+    line-height: 1.375;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:max-w-\[480px\] {
+    max-width: 480px;
+  }
+
+  .lg\:max-w-\[380px\] {
+    max-width: 380px;
+  }
+
+  .lg\:text-\[80px\] {
+    font-size: 80px;
+  }
+
+  .lg\:leading-snug {
+    line-height: 1.375;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:max-w-\[480px\] {
+    max-width: 480px;
   }
 }
 
