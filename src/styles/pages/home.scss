@@ -1,14 +1,114 @@
 .services {
-  @apply mt-24 flex flex-wrap items-center justify-center space-x-4 max-w-5xl mx-auto;
+  @apply mt-24 flex flex-wrap items-center justify-center max-w-5xl mx-auto;
   li {
+    @apply mx-4 md:mx-6 cursor-pointer;
+    &:nth-child(1) {
+      &:hover {
+        img {
+          @apply rotate-45;
+        }
+      }
+    }
     &:hover {
-
+      img {
+        @apply rotate-180;
+      }
+      p {
+        @apply opacity-100;
+      }
     }
     img {
-      @apply mx-auto;
+      @apply mx-auto h-12 md:h-24 transition-all duration-700;
     }
     p {
-      @apply mt-4 text-secondary;
+      @apply mt-4 text-[10px] md:text-3xl text-secondary opacity-100 md:opacity-0 transition-all duration-700;
     }
+  }
+}
+
+.trusted {
+  &:hover, &:active {
+    .square-big {
+      &:before {
+        @apply w-full;
+        animation: hide 0s linear .7s forwards;
+      }
+      div {
+        animation: show 0s linear .7s forwards;
+      }
+    }
+  }
+  .square-big {
+    @apply relative inline-flex mt-12 md:mt-28;
+    &:before {
+      content: '';
+      @apply absolute left-1/2 -translate-x-1/2 top-0 w-full h-full bg-secondary w-12 md:w-28 transition-all duration-700;
+    }
+    div {
+      @apply w-12 md:w-28 h-12 md:h-28 bg-secondary opacity-0 transition-none;
+    }
+  }
+}
+
+.frictionless {
+  &:hover, &:active {
+    .square-to-circle {
+      > div {
+        animation: toRight 1.5s ease-in-out forwards;
+      }
+    }
+  }
+  .square-to-circle {
+    @apply mt-24 overflow-hidden;
+    > div {
+      @apply relative w-12 md:w-28 h-12 md:h-28 bg-secondary;
+      &:before {
+        content: '';
+        @apply absolute right-0 bottom-0 bg-secondary h-[3px] w-screen;
+      }
+    }
+  }
+}
+
+
+@media screen and(max-width: 1200px) {
+  .trusted {
+    .square-big {
+      div:not(:nth-child(1)) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes toRight {
+  0% {
+    border-radius: 0;
+    left:          0;
+    transform:     translate(0, 0);
+  }
+  100% {
+    border-radius: 100px;
+    left:          100%;
+    transform:     translate(-100%, 0);
   }
 }

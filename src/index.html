@@ -26,7 +26,14 @@
     </div>
 </header>
 <main>
-    <section class='mt-20'>
+    <section id='banner' class='pt-20'>
+        <a href='#banner'
+           class='group fixed z-40 right-0 top-1/2 translate-x-1/2 w-24 h-20 flex items-center bg-secondary rounded-full cursor-pointer'>
+            <img class='w-5 absolute top-1/2 -translate-y-1/2 left-5 group-hover:hidden'
+                 src='./images/icons/triangle.svg' alt=''>
+            <img class='w-5 absolute top-1/2 -translate-y-1/2 left-5 hidden group-hover:block'
+                 src='./images/icons/triangle-white.svg' alt=''>
+        </a>
         <div class='container'>
             <div class='py-10 md:py-20 border-b border-b-primary flex items-end justify-between space-x-8 flex-col-reverse md:flex-row'>
                 <div class='relative w-full md:w-7/12'>
@@ -47,32 +54,45 @@
                         We democratise access to digital assets for the investment community, with the mission to
                         generate mainstream adoption of digital assets for public and private institutional clients.
                     </p>
-                    <div class='flex items-center space-x-2'>
-                        <div class='w-4 md:w-8 h-4 md:h-8 bg-secondary'></div>
-                        <div class='w-4 md:w-8 h-4 md:h-8 bg-secondary'></div>
-                        <div class='w-4 md:w-8 h-4 md:h-8 bg-secondary'></div>
+                    <div class='mt-8 square-small'>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class='text-center'>
-        <div class='container max-w-5xl py-10 md:py-20 border-b border-b-primary'>
-            <h2>
-                <span>Trusted</span> advisors <br /> on
-                your digital asset journey
-            </h2>
-            <p>
-                Combining an unprecedented dual competency in Finance and Tech, we provide regulated end-to-end banking
-                products to help our clients capture new growth opportunities fuelled by the emergence of digital assets
-                and technologies.
-            </p>
-            <div class=' square-big mx-auto'></div>
-            <div class='square-small'>
-                <div class='ml-auto'></div>
+    <section class='trusted text-center'>
+        <div class='flex flex-col container py-10 md:py-20 border-b border-b-primary'>
+            <div class='max-w-5xl mx-auto'>
+                <h2>
+                    <span>Trusted</span> advisors <br /> on
+                    your digital asset journey
+                </h2>
+                <p>
+                    Combining an unprecedented dual competency in Finance and Tech, we provide regulated end-to-end
+                    banking products to help our clients capture new growth opportunities fuelled by the emergence of
+                    digital assets and technologies.
+                </p>
+            </div>
+            <div class='square-big flex justify-center items-center space-x-4 mx-auto'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
                 <div></div>
                 <div></div>
             </div>
+            <a href='#' class='ml-auto mt-8 btn'>
+                <div></div>
+                <div></div>
+                <div class='text'>learn more</div>
+                <div></div>
+            </a>
         </div>
     </section>
     <section class='my-10 md:my-20 relative'>
@@ -85,7 +105,7 @@
         </h2>
         <img class='w-full' src='./images/kitao.jpg' alt=''>
     </section>
-    <section>
+    <section class='frictionless'>
         <div class='container pb-10 md:pb-20 border-b border-b-primary'>
             <div class='flex items-start justify-between flex-col md:flex-row md:space-x-4'>
                 <div class='w-full md:w-7/12'>
@@ -103,16 +123,21 @@
                     </p>
                 </div>
             </div>
-            <div class='square-big'></div>
-            <div class='square-small'>
-                <div class='ml-auto'></div>
+            <div class='hidden md:block square-to-circle'>
                 <div></div>
-                <div></div>
+            </div>
+            <div class='w-full mt-8 text-right'>
+                <a href='#' class='btn'>
+                    <div></div>
+                    <div></div>
+                    <div class='text'>learn more</div>
+                    <div></div>
+                </a>
             </div>
         </div>
     </section>
     <section class='my-10 md:my-20'>
-        <div class='container'>
+        <div class='container group'>
             <h2><span>Bridging</span> the gap</h2>
             <div class='flex justify-between items-start flex-col md:flex-row'>
                 <div class='w-10/12 md:w-5/12 flex items-start'>
@@ -141,7 +166,7 @@
                     </h2>
                 </div>
             </div>
-            <div class='my-10 flex justify-between items-center relative'>
+            <div class='my-10 flex justify-between items-center relative max-w-[2000px] md:group-hover:max-w-[352px] transition-all ease-in-out duration-1000'>
                 <div class='w-10 md:w-44 h-10 md:h-44 bg-secondary rounded-full'></div>
                 <div class='absolute left-0 top-1/2 h-[3px] w-full bg-secondary'></div>
                 <div class='w-10 md:w-44 h-10 md:h-44 bg-secondary rounded-full'></div>
@@ -154,31 +179,42 @@
                 Powering <span>next-gen</span> <br />
                 financial services
             </h2>
-            <div class='square-small justify-center'>
+            <a href='#' class='btn'>
                 <div></div>
                 <div></div>
+                <div class='text'>learn more</div>
                 <div></div>
-            </div>
+            </a>
             <ul class='services'>
                 <li>
-                    <img src='./images/icons/service-1.svg' alt=''>
-                    <p>Corporate <br /> Advisory</p>
+                    <a href='#'>
+                        <img src='./images/icons/service-1.svg' alt=''>
+                        <p>Corporate <br /> Advisory</p>
+                    </a>
                 </li>
                 <li>
-                    <img src='./images/icons/service-2.svg' alt=''>
-                    <p>Tokenisation <br /> and issuance</p>
+                    <a href='#'>
+                        <img src='./images/icons/service-2.svg' alt=''>
+                        <p>Tokenisation <br /> and issuance</p>
+                    </a>
                 </li>
                 <li>
-                    <img src='./images/icons/service-3.svg' alt=''>
-                    <p>Digital <br /> Custody</p>
+                    <a href='#'>
+                        <img src='./images/icons/service-3.svg' alt=''>
+                        <p>Digital <br /> Custody</p>
+                    </a>
                 </li>
                 <li>
-                    <img src='./images/icons/service-4.svg' alt=''>
-                    <p>Digital exchange <br /> Connectivity</p>
+                    <a href='#'>
+                        <img src='./images/icons/service-4.svg' alt=''>
+                        <p>Digital exchange <br /> Connectivity</p>
+                    </a>
                 </li>
                 <li>
-                    <img src='./images/icons/service-5.svg' alt=''>
-                    <p>Blockchain <br /> Services</p>
+                    <a href='#'>
+                        <img src='./images/icons/service-5.svg' alt=''>
+                        <p>Blockchain <br /> Services</p>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -218,10 +254,13 @@
                         </p>
                     </div>
                 </div>
-                <div class='square-small mb-4'>
-                    <div class='ml-auto'></div>
-                    <div></div>
-                    <div></div>
+                <div class='w-full my-4 md:text-right'>
+                    <a href='#' class='btn'>
+                        <div></div>
+                        <div></div>
+                        <div class='text'>learn more</div>
+                        <div></div>
+                    </a>
                 </div>
             </div>
             <div class='mt-16 news-item border-b border-b-primary'>
@@ -241,10 +280,13 @@
                         the regional ecosystem
                     </h3>
                 </div>
-                <div class='square-small mb-4'>
-                    <div class='ml-auto'></div>
-                    <div></div>
-                    <div></div>
+                <div class='w-full my-4 md:text-right'>
+                    <a href='#' class='btn'>
+                        <div></div>
+                        <div></div>
+                        <div class='text'>learn more</div>
+                        <div></div>
+                    </a>
                 </div>
             </div>
         </div>

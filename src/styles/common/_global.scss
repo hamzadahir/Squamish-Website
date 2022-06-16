@@ -3,6 +3,10 @@
   font-family: Roboto, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2 {
   // font-size: 80px
   @apply mb-4 text-3xl lg:text-5xl xl:text-[80px] leading-snug md:leading-snug lg:leading-snug font-light;
@@ -31,14 +35,34 @@ a {
   @apply font-light;
 }
 
-
-.square-big {
-  @apply mt-12 md:mt-28 w-12 md:w-28 h-12 md:h-28 bg-secondary;
-}
-
 .square-small {
-  @apply mt-8 flex items-center space-x-2;
+  @apply flex items-center space-x-2;
   div {
     @apply w-4 lg:w-[22px] xl:w-[30px] h-4 lg:h-[22px] xl:h-[30px] bg-secondary;
+  }
+}
+
+.btn {
+  @apply inline-flex items-center uppercase;
+  &:hover {
+    div {
+      &:not(.text) {
+        @apply rotate-90;
+      }
+      &.text {
+        @apply ml-2 max-w-[130px] opacity-100;
+      }
+    }
+  }
+  div {
+    &:not(.text) {
+      @apply w-4 lg:w-[22px] xl:w-[30px] h-4 lg:h-[22px] xl:h-[30px] bg-secondary transition-all duration-500;
+    }
+    &:not(:nth-child(1)) {
+      @apply ml-2;
+    }
+    &.text {
+      @apply text-[15px] md:text-xl md:max-w-0 md:ml-0 md:opacity-0 text-secondary whitespace-nowrap transition-all duration-500;
+    }
   }
 }
