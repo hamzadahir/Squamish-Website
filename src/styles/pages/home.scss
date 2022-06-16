@@ -39,13 +39,13 @@
     }
   }
   .square-big {
-    @apply relative inline-flex mt-12 md:mt-28;
+    @apply relative inline-flex mt-12 md:mt-20;
     &:before {
       content: '';
-      @apply absolute left-1/2 -translate-x-1/2 top-0 w-full h-full bg-secondary w-12 md:w-28 transition-all duration-700;
+      @apply absolute left-1/2 -translate-x-1/2 top-0 w-full h-full bg-secondary w-12 md:w-24 transition-all duration-700;
     }
     div {
-      @apply w-12 md:w-28 h-12 md:h-28 bg-secondary opacity-0 transition-none;
+      @apply w-12 md:w-24 h-12 md:h-24 bg-secondary opacity-0 transition-none;
     }
   }
 }

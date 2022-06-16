@@ -7,7 +7,7 @@ module.exports = {
         DEFAULT: '1rem',
       },
       screens: {
-        '2xl': '1640px',
+        '2xl': '1672px',
       },
     },
     extend: {

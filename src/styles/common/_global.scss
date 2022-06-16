@@ -25,7 +25,7 @@ h3 {
 
 p {
   // font-size: 30px
-  @apply mb-4 text-[15px] lg:text-xl xl:text-3xl font-light;
+  @apply mb-4 text-[15px] leading-snug lg:text-xl xl:text-3xl lg:leading-snug xl:leading-snug font-light;
   span {
     @apply font-bold;
   }

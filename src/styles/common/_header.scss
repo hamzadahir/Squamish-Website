@@ -1,6 +1,6 @@
 .header {
   .menu {
-    @apply fixed z-10 md:static top-0 left-0 w-full h-full bg-white text-center flex flex-col md:flex-row items-center justify-center md:justify-end md:space-x-8;
+    @apply fixed z-10 md:static top-0 left-0 w-full h-full bg-white text-center flex flex-col md:flex-row items-center justify-center md:justify-end md:space-x-16;
     li {
       @apply mb-8 md:mb-0;
     }
