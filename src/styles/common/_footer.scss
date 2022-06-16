@@ -5,7 +5,7 @@
       @apply mb-4 md:mb-0;
     }
     a {
-      @apply text-xl transition;
+      @apply text-xl transition-all;
       &:hover, &:active, &.active {
         @apply text-secondary;
       }
