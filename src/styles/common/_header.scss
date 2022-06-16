@@ -1,8 +1,8 @@
 .header {
   .menu {
-    @apply fixed z-10 md:static top-0 left-0 w-full h-full bg-white text-center flex flex-col md:flex-row items-center justify-center md:justify-end md:space-x-16;
+    @apply fixed z-10 md:static top-0 left-0 w-full h-full bg-white text-center flex flex-col md:flex-row items-center justify-center md:justify-end md:space-x-8 xl:space-x-16;
     li {
-      @apply mb-8 md:mb-0;
+      @apply mb-12 md:mb-0;
     }
     a {
       @apply uppercase text-[15px] transition;
@@ -12,17 +12,17 @@
     }
   }
   .burger {
-    @apply relative z-20 flex md:hidden flex-col justify-between w-7 h-4;
+    @apply relative z-20 flex md:hidden flex-col justify-between w-7 h-5;
     &.opened {
       div:nth-child(1) {
-        @apply rotate-45 top-[7px];
+        @apply rotate-45 top-[9px];
       }
       div:nth-child(2) {
         @apply opacity-0;
       }
 
       div:nth-child(3) {
-        @apply -rotate-45 -top-[7px];
+        @apply -rotate-45 -top-[9px];
       }
     }
     div {

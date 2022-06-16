@@ -58,6 +58,9 @@ a {
     &:not(.text) {
       @apply w-4 lg:w-[22px] xl:w-[30px] h-4 lg:h-[22px] xl:h-[30px] bg-secondary transition-all duration-500;
     }
+    &:nth-child(1) {
+      @apply hidden md:block;
+    }
     &:not(:nth-child(1)) {
       @apply ml-2;
     }

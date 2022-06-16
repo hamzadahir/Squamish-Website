@@ -11,7 +11,7 @@
 <body class="home-page">
 <header class='header fixed z-30 left-0 top-0 w-full bg-white'>
     <div class='container'>
-        <div class='pt-12 pb-8 flex items-end justify-between border-b border-b-primary'>
+        <div class='pt-6 pb-6 md:pt-12 md:pb-8 flex items-center md:items-end justify-between border-b border-b-primary'>
             <a href='/'><img class='w-28 md:w-44 relative z-20' src='./images/icons/logo.svg' alt=''></a>
             <ul id='menu' class='menu !hidden md:!flex'>
                 <li><a class='active' href='/'>HOME</a></li>
@@ -29,7 +29,7 @@
     </div>
 </header>
 <main>
-    <section id='banner' class='pt-32'>
+    <section id='banner' class='pt-20 md:pt-32'>
         <a href='#banner'
            class='group fixed z-40 right-0 top-1/2 translate-x-1/2 w-24 h-20 flex items-center bg-secondary rounded-full cursor-pointer'>
             <img class='w-5 absolute top-1/2 -translate-y-1/2 left-5 group-hover:hidden'
@@ -38,18 +38,19 @@
                  src='./images/icons/triangle-white.svg' alt=''>
         </a>
         <div class='container'>
-            <div class='pt-10 pb-10 md:pt-20 md:pb-24 border-b border-b-primary flex items-end justify-between flex-col-reverse md:flex-row'>
+            <div class='pt-10 pb-32 md:pt-20 md:pb-24 border-b border-b-primary flex items-end justify-between flex-col-reverse md:flex-row'>
                 <div class='relative w-full md:w-6/12'>
                     <h2 class='hidden md:block'>
                         Welcome to the <br />
                         <span>future</span> of digital assets.
                     </h2>
-                    <img class='w-full' src='./images/city.png' alt=''>
-                    <img class='w-12 md:w-20 absolute z-10 bottom-0 left-0 translate-y-1/2'
+                    <img class='w-screen -left-8 md:left-0 relative max-w-none md:w-full'
+                         src='./images/city.png' alt=''>
+                    <img class='w-12 md:w-20 absolute z-10 -bottom-16 md:bottom-0 left-0 translate-y-1/2'
                          src='./images/icons/arrow.svg' alt=''>
                 </div>
-                <div class='mb-8 md:mb-0 w-full md:w-6/12 md:pl-[4%]'>
-                    <h2 class='block md:hidden'>
+                <div class='mb-20 md:mb-0 w-full md:w-6/12 md:pl-[4%]'>
+                    <h2 class='mb-8 block md:hidden max-w-[300px] sm:max-w-[700px]'>
                         Welcome to the <br />
                         <span>future</span> of digital assets.
                     </h2>
@@ -57,7 +58,7 @@
                         We democratise access to digital assets for the investment community, with the mission to
                         generate mainstream adoption of digital assets for public and private institutional clients.
                     </p>
-                    <div class='mt-8 square-small'>
+                    <div class='mt-4 md:mt-8 square-small'>
                         <div></div>
                         <div></div>
                         <div></div>
@@ -67,38 +68,41 @@
         </div>
     </section>
     <section class='trusted text-center'>
-        <div class='flex flex-col container pt-10 pb-10 md:pt-28 md:pb-12 border-b border-b-primary'>
-            <div class='max-w-5xl mx-auto'>
-                <h2 class='mb-12'>
-                    <span>Trusted</span> advisors on <br />
-                    your digital asset journey
-                </h2>
-                <p class='max-w-3xl mx-auto'>
-                    Combining an unprecedented dual competency in Finance and Tech, we provide regulated end-to-end
-                    banking products to help our clients capture new growth opportunities fuelled by the emergence of
-                    digital assets and technologies.
-                </p>
+        <div class='container'>
+            <div class='flex flex-col pt-6 pb-10 md:pt-28 md:pb-12 border-b border-b-primary'>
+                <div class='max-w-5xl mx-auto'>
+                    <h2 class='mb-6 md:mb-12'>
+                        <span>Trusted</span> advisors on <br />
+                        your digital asset journey
+                    </h2>
+                    <p class='max-w-3xl mx-auto'>
+                        Combining an unprecedented dual competency in Finance and Tech, we provide regulated end-to-end
+                        banking products to help our clients capture new growth opportunities fuelled by the emergence
+                        of
+                        digital assets and technologies.
+                    </p>
+                </div>
+                <div class='square-big flex justify-center items-center space-x-4 mx-auto'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href='#' class='mx-auto md:ml-auto md:mr-0 mt-12 md:mt-8 btn'>
+                    <div></div>
+                    <div></div>
+                    <div class='text'>learn more</div>
+                    <div></div>
+                </a>
             </div>
-            <div class='square-big flex justify-center items-center space-x-4 mx-auto'>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <a href='#' class='ml-auto mt-8 btn'>
-                <div></div>
-                <div></div>
-                <div class='text'>learn more</div>
-                <div></div>
-            </a>
         </div>
     </section>
-    <section class='mt-10 mb-10 md:mb-16 md:mt-20 relative'>
+    <section class='mt-12 mb-12 md:mb-16 md:mt-20 relative'>
         <h2 class='text-xl leading-snug md:text-5xl md:leading-snug lg:text-[80px] lg:leading-snug text-white absolute z-10 left-1/2 top-1/2 -translate-y-1/2 translate-x-1/4 xl:translate-x-1/2'>
             Chairman <br />
             <span class='text-white'>
@@ -109,41 +113,43 @@
         <img class='w-full' src='./images/kitao.jpg' alt=''>
     </section>
     <section class='frictionless'>
-        <div class='container pb-6 border-b border-b-primary'>
-            <div class='flex items-start justify-between flex-col md:flex-row md:space-x-4'>
-                <div class='w-full md:w-7/12'>
-                    <h2>
-                        Accelerating <br />
-                        the advent of <br />
-                        <span>frictionless</span> digital <br />
-                        asset markets
-                    </h2>
+        <div class='container'>
+            <div class='pb-8 border-b border-b-primary'>
+                <div class='flex items-start justify-between flex-col md:flex-row md:space-x-4'>
+                    <div class='w-full md:w-7/12'>
+                        <h2>
+                            Accelerating <br />
+                            the advent of <br />
+                            <span>frictionless</span> digital <br />
+                            asset markets
+                        </h2>
+                    </div>
+                    <div class='md:pt-8 pr-12 md:pr-16 w-full max-w-[280px] lg:max-w-[380px] xl:max-w-[540px]'>
+                        <p>
+                            Backed by SBI Digital Asset Holdings, an affiliate of SBI Holdings, we bring deep experience
+                            and a 15+ year track record in challenging the status quo.
+                        </p>
+                    </div>
                 </div>
-                <div class='pt-8 pr-16 w-full max-w-[280px] lg:max-w-[380px] xl:max-w-[540px]'>
-                    <p>
-                        Backed by SBI Digital Asset Holdings, an affiliate of SBI Holdings, we bring deep experience and
-                        a 15+ year track record in challenging the status quo.
-                    </p>
+                <div class='hidden md:block square-to-circle'>
+                    <div></div>
                 </div>
-            </div>
-            <div class='hidden md:block square-to-circle'>
-                <div></div>
-            </div>
-            <div class='w-full mt-28 text-right'>
-                <a href='#' class='btn'>
-                    <div></div>
-                    <div></div>
-                    <div class='text'>learn more</div>
-                    <div></div>
-                </a>
+                <div class='w-full mt-6 md:mt-28 text-center md:text-right'>
+                    <a href='#' class='btn'>
+                        <div></div>
+                        <div></div>
+                        <div class='text'>learn more</div>
+                        <div></div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <section class='mb-10 mt-10 md:mb-20 md:mt-24'>
+    <section class='mt-12 mb-10 md:mb-20 md:mt-24'>
         <div class='container group'>
-            <h2 class='mb-20'><span>Bridging</span> the gap</h2>
+            <h2 class='mb-6 md:mb-20'><span>Bridging</span> the gap</h2>
             <div class='flex justify-between items-start flex-col md:flex-row'>
-                <div class='w-10/12 md:w-6/12 flex items-start'>
+                <div class='w-8/12 md:w-6/12 flex items-start'>
                     <div class='!hidden md:!flex square-small flex-col !mt-2 mr-10 !space-x-0 space-y-2'>
                         <div></div>
                         <div></div>
@@ -156,7 +162,7 @@
                         to a new financial services paradigm.
                     </p>
                 </div>
-                <div class='w-full md:w-5/12 flex justify-between items-start md:justify-end pr-20'>
+                <div class='w-full md:w-5/12 flex justify-between items-start md:justify-end mt-4 md:mt-0 pr-4 md:pr-20 text-right md:text-left'>
                     <div class='flex md:!hidden square-small !items-start flex-col !mt-2 !space-x-0 space-y-2'>
                         <div></div>
                         <div></div>
@@ -169,57 +175,59 @@
                     </h2>
                 </div>
             </div>
-            <div class='my-36 flex justify-between items-center relative max-w-[2000px] md:group-hover:max-w-[352px] transition-all ease-in-out duration-1000'>
+            <div class='my-4 md:my-36 flex justify-between items-center relative max-w-[2000px] md:group-hover:max-w-[352px] transition-all ease-in-out duration-1000'>
                 <div class='w-10 md:w-44 h-10 md:h-44 bg-secondary rounded-full'></div>
                 <div class='absolute left-0 top-1/2 h-[3px] w-full bg-secondary'></div>
                 <div class='w-10 md:w-44 h-10 md:h-44 bg-secondary rounded-full'></div>
             </div>
         </div>
     </section>
-    <section class='text-center mt-10 mb-10 md:mt-48 md:mb-72'>
+    <section class='text-center mt-10 mb-14 md:mt-48 md:mb-72'>
         <div class='container'>
-            <h2 class='mb-8'>
-                Powering <span>next-gen</span> <br />
-                financial services
-            </h2>
-            <a href='#' class='btn'>
-                <div></div>
-                <div></div>
-                <div class='text'>learn more</div>
-                <div></div>
-            </a>
-            <ul class='services'>
-                <li>
-                    <a href='#'>
-                        <img src='./images/icons/service-1.svg' alt=''>
-                        <p>Corporate <br /> Advisory</p>
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        <img src='./images/icons/service-2.svg' alt=''>
-                        <p>Tokenisation <br /> and issuance</p>
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        <img src='./images/icons/service-3.svg' alt=''>
-                        <p>Digital <br /> Custody</p>
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        <img src='./images/icons/service-4.svg' alt=''>
-                        <p>Digital exchange <br /> Connectivity</p>
-                    </a>
-                </li>
-                <li>
-                    <a href='#'>
-                        <img src='./images/icons/service-5.svg' alt=''>
-                        <p>Blockchain <br /> Services</p>
-                    </a>
-                </li>
-            </ul>
+            <div class='border-b border-b-primary'>
+                <h2 class='mb-8'>
+                    Powering <span>next-gen</span> <br />
+                    financial services
+                </h2>
+                <a href='#' class='btn'>
+                    <div></div>
+                    <div></div>
+                    <div class='text'>learn more</div>
+                    <div></div>
+                </a>
+                <ul class='services'>
+                    <li>
+                        <a href='#'>
+                            <img src='./images/icons/service-1.svg' alt=''>
+                            <p>Corporate <br /> Advisory</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#'>
+                            <img src='./images/icons/service-2.svg' alt=''>
+                            <p>Tokenisation <br /> and issuance</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#'>
+                            <img src='./images/icons/service-3.svg' alt=''>
+                            <p>Digital <br /> Custody</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#'>
+                            <img src='./images/icons/service-4.svg' alt=''>
+                            <p>Digital exchange <br /> Connectivity</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#'>
+                            <img src='./images/icons/service-5.svg' alt=''>
+                            <p>Blockchain <br /> Services</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section>
@@ -231,9 +239,9 @@
         </div>
         <img class='w-full' src='./images/bg-news.png' alt=''>
         <div class='container'>
-            <div class='mt-16 news-item border-b border-b-primary'>
+            <div class='mt-10 md:mt-16 news-item border-b border-b-primary'>
                 <div class='mb-4 md:mb-12 flex'>
-                    <div class='square-small flex-col !mt-1 mr-2 lg:mr-6 !space-x-0 space-y-1 lg:space-y-2'>
+                    <div class='square-small flex-col !mt-1 xl:!mt-3 mr-2 lg:mr-6 !space-x-0 space-y-1 lg:space-y-2'>
                         <div></div>
                         <div></div>
                     </div>
@@ -242,8 +250,9 @@
                         <p class='mb-0'><span>10 May</span> 2022</p>
                     </div>
                 </div>
-                <img class='w-full' src='./images/news-1.jpg' alt=''>
-                <div class='mt-16 mb-4 flex flex-col md:flex-row justify-between'>
+                <img class='w-screen max-w-none -left-8 md:left-0 md:w-full relative min-h-[169px]'
+                     src='./images/news-1.jpg' alt=''>
+                <div class='mt-14 md:mt-16 mb-4 flex flex-col md:flex-row justify-between'>
                     <h3>
                         <span>SBI Digital Markets</span> receives notice of Approval in Principle for CMS License from
                         the Singapore Monetary Authority of Singapore (MAS)
@@ -257,7 +266,7 @@
                         </p>
                     </div>
                 </div>
-                <div class='w-full my-4 md:text-right'>
+                <div class='w-full mt-4 mb-8 md:mt-4 md:mb-4 md:text-right'>
                     <a href='#' class='btn'>
                         <div></div>
                         <div></div>
@@ -266,9 +275,9 @@
                     </a>
                 </div>
             </div>
-            <div class='mt-16 news-item border-b border-b-primary'>
+            <div class='mt-10 md:mt-16 news-item border-b border-b-primary'>
                 <div class='mb-4 md:mb-12 flex'>
-                    <div class='square-small flex-col !mt-1 mr-2 lg:mr-6 !space-x-0 space-y-1 lg:space-y-2'>
+                    <div class='square-small flex-col !mt-1 xl:!mt-3 mr-2 lg:mr-6 !space-x-0 space-y-1 lg:space-y-2'>
                         <div></div>
                         <div></div>
                     </div>
@@ -283,7 +292,7 @@
                         the regional ecosystem
                     </h3>
                 </div>
-                <div class='w-full my-4 md:text-right'>
+                <div class='w-full mt-4 mb-8 md:mt-4 md:mb-4 md:text-right'>
                     <a href='#' class='btn'>
                         <div></div>
                         <div></div>
@@ -295,11 +304,11 @@
         </div>
     </section>
 </main>
-<footer class="py-16 footer">
+<footer class="py-6 md:py-16 footer">
     <div class='container'>
         <div class='flex items-center flex-col md:flex-row justify-between'>
             <ul class='menu'>
-                <li class='menus'>
+                <li>
                     <a href='#'>Terms & Conditions</a>
                 </li>
                 <li>
@@ -312,7 +321,7 @@
                     <a href='#'>Privacy Policy</a>
                 </li>
             </ul>
-            <p class='text-xl mb-0'>©2022 SBI Digital Markets</p>
+            <p class='text-[15px] lg:text-xl mb-0'>©2022 SBI Digital Markets</p>
         </div>
     </div>
 </footer>
