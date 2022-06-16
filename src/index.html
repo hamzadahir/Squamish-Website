@@ -11,7 +11,7 @@
 </head>
 
 <body class="home-page">
-<header>
+<header class='fixed z-30 left-0 top-0 w-full bg-white'>
     <div class='container'>
         <div class='py-6 flex items-center justify-between border-b border-b-primary'>
             <a href='/'><img class='w-28 md:w-44' src='./images/icons/logo.svg' alt=''></a>
@@ -26,7 +26,7 @@
     </div>
 </header>
 <main>
-    <section>
+    <section class='mt-20'>
         <div class='container'>
             <div class='py-10 md:py-20 border-b border-b-primary flex items-end justify-between space-x-8 flex-col-reverse md:flex-row'>
                 <div class='relative w-full md:w-7/12'>
@@ -146,6 +146,53 @@
                 <div class='absolute left-0 top-1/2 h-[3px] w-full bg-secondary'></div>
                 <div class='w-10 md:w-44 h-10 md:h-44 bg-secondary rounded-full'></div>
             </div>
+        </div>
+    </section>
+    <section class='text-center my-10 md:my-20'>
+        <div class='container'>
+            <h2>
+                Powering <span>next-gen</span> <br />
+                financial services
+            </h2>
+            <div class='square-small justify-center'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class='services'>
+                <li>
+                    <img src='./images/icons/service-1.svg' alt=''>
+                    <p>Corporate <br /> Advisory</p>
+                </li>
+                <li>
+                    <img src='./images/icons/service-2.svg' alt=''>
+                    <p>Tokenisation <br /> and issuance</p>
+                </li>
+                <li>
+                    <img src='./images/icons/service-3.svg' alt=''>
+                    <p>Digital <br /> Custody</p>
+                </li>
+                <li>
+                    <img src='./images/icons/service-4.svg' alt=''>
+                    <p>Digital exchange <br /> Connectivity</p>
+                </li>
+                <li>
+                    <img src='./images/icons/service-5.svg' alt=''>
+                    <p>Blockchain <br /> Services</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class='container relative z-10'>
+            <h2 class='-mb-[82px] lg:-mb-[132px] xl:-mb-[220px]'>
+                Press Release <br />
+                / <span>News</span>
+            </h2>
+        </div>
+        <img class='w-full' src='./images/bg-news.png' alt=''>
+        <div class='container'>
+            item 1
         </div>
     </section>
 </main>

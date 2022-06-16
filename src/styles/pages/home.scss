@@ -1,9 +1,14 @@
-.menu {
-  @apply items-center justify-end space-x-8;
-  a {
-    @apply uppercase text-[15px] transition;
-    &:hover, &:active, &.active {
-      @apply text-secondary;
+.services {
+  @apply mt-24 flex flex-wrap items-center justify-center space-x-4 max-w-5xl mx-auto;
+  li {
+    &:hover {
+
+    }
+    img {
+      @apply mx-auto;
+    }
+    p {
+      @apply mt-4 text-secondary;
     }
   }
 }
