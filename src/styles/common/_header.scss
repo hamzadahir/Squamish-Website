@@ -1,9 +1,11 @@
-.menu {
-  @apply items-center justify-end space-x-8;
-  a {
-    @apply uppercase text-[15px] transition;
-    &:hover, &:active, &.active {
-      @apply text-secondary;
+.header {
+  .menu {
+    @apply items-center justify-end space-x-8;
+    a {
+      @apply uppercase text-[15px] transition;
+      &:hover, &:active, &.active {
+        @apply text-secondary;
+      }
     }
   }
 }

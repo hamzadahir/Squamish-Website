@@ -740,10 +740,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(237 31 39 / var(--tw-bg-opacity));
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -752,6 +748,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-10 {
@@ -893,6 +894,10 @@ p span {
   font-weight: 700;
 }
 
+a {
+  font-weight: 300;
+}
+
 .square-big {
   margin-top: 3rem;
   height: 3rem;
@@ -944,18 +949,18 @@ p span {
 
 /** Layouts */
 
-.menu {
+.header .menu {
   align-items: center;
   justify-content: flex-end;
 }
 
-.menu > :not([hidden]) ~ :not([hidden]) {
+.header .menu > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.menu a {
+.header .menu a {
   font-size: 15px;
   text-transform: uppercase;
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -965,7 +970,65 @@ p span {
   transition-duration: 150ms;
 }
 
-.menu a:hover, .menu a:active, .menu a.active {
+.header .menu a:hover, .header .menu a:active, .header .menu a.active {
+  --tw-text-opacity: 1;
+  color: rgb(237 31 39 / var(--tw-text-opacity));
+}
+
+.footer .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer .menu > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+@media (min-width: 768px) {
+  .footer .menu {
+    flex-direction: row;
+  }
+
+  .footer .menu > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer .menu > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(7rem * var(--tw-space-x-reverse));
+    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+.footer .menu li {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer .menu li {
+    margin-bottom: 0px;
+  }
+}
+
+.footer .menu a {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.footer .menu a:hover, .footer .menu a:active, .footer .menu a.active {
   --tw-text-opacity: 1;
   color: rgb(237 31 39 / var(--tw-text-opacity));
 }

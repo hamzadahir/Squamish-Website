@@ -1,0 +1,15 @@
+.footer {
+  .menu {
+    @apply flex items-center justify-start flex-col md:flex-row space-x-0 md:space-x-4 xl:space-x-28;
+    li {
+      @apply mb-4 md:mb-0;
+    }
+    a {
+      @apply text-xl transition;
+      &:hover, &:active, &.active {
+        @apply text-secondary;
+      }
+    }
+  }
+
+}

@@ -27,6 +27,10 @@ p {
   }
 }
 
+a {
+  @apply font-light;
+}
+
 
 .square-big {
   @apply mt-12 md:mt-28 w-12 md:w-28 h-12 md:h-28 bg-secondary;
