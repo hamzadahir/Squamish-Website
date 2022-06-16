@@ -1,11 +1,32 @@
 .header {
   .menu {
-    @apply items-center justify-end space-x-8;
+    @apply fixed z-10 md:static top-0 left-0 w-full h-full bg-white text-center flex flex-col md:flex-row items-center justify-center md:justify-end md:space-x-8;
+    li {
+      @apply mb-8 md:mb-0;
+    }
     a {
       @apply uppercase text-[15px] transition;
       &:hover, &:active, &.active {
         @apply text-secondary;
       }
+    }
+  }
+  .burger {
+    @apply relative z-20 flex md:hidden flex-col justify-between w-7 h-4;
+    &.opened {
+      div:nth-child(1) {
+        @apply rotate-45 top-[7px];
+      }
+      div:nth-child(2) {
+        @apply opacity-0;
+      }
+
+      div:nth-child(3) {
+        @apply -rotate-45 -top-[7px];
+      }
+    }
+    div {
+      @apply relative w-full h-0.5 bg-primary;
     }
   }
 }

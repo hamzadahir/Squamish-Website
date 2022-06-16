@@ -14,14 +14,19 @@
 <header class='header fixed z-30 left-0 top-0 w-full bg-white'>
     <div class='container'>
         <div class='py-6 flex items-center justify-between border-b border-b-primary'>
-            <a href='/'><img class='w-28 md:w-44' src='./images/icons/logo.svg' alt=''></a>
-            <ul class='menu hidden md:flex'>
+            <a href='/'><img class='w-28 md:w-44 relative z-20' src='./images/icons/logo.svg' alt=''></a>
+            <ul id='menu' class='menu !hidden md:!flex'>
                 <li><a class='active' href='/'>HOME</a></li>
                 <li><a href='#'>ABOUT US</a></li>
                 <li><a href='#'>OUR SERVICES</a></li>
                 <li><a href='#'>CAREERS</a></li>
                 <li><a href='#'>CONTACT US</a></li>
             </ul>
+            <div id='burger' class='burger'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
 </header>
@@ -313,6 +318,6 @@
         </div>
     </div>
 </footer>
+<script src='./js/main.js'></script>
 </body>
-
 </html>
