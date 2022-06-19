@@ -26,48 +26,47 @@
   }
 }
 
-.trusted {
-  &:hover, &:active {
-    .square-big {
-      &:before {
-        @apply w-full;
-        animation: hide 0s linear .7s forwards;
-      }
-      div {
-        animation: show 0s linear .7s forwards;
-      }
-    }
-  }
-  .square-big {
-    @apply relative inline-flex mt-5 md:mt-12 md:mt-20;
+.square-big {
+  @apply relative inline-flex mt-5 md:mt-12 md:mt-20;
+  &.animation {
     &:before {
-      content: '';
-      @apply absolute left-1/2 -translate-x-1/2 top-0 w-full h-full bg-secondary w-7 md:w-24 transition-all duration-700;
+      @apply w-full;
+      animation: hide 0s linear .7s forwards;
     }
     div {
-      @apply w-7 md:w-24 h-7 md:h-24 bg-secondary opacity-0 transition-none;
+      animation: show 0s linear .7s forwards;
+    }
+  }
+  &:before {
+    content: '';
+    @apply absolute left-1/2 -translate-x-1/2 top-0 w-full h-full bg-secondary w-7 md:w-24 transition-all duration-700;
+  }
+  div {
+    @apply w-7 md:w-24 h-7 md:h-24 bg-secondary opacity-0 transition-none;
+  }
+}
+
+.square-to-circle {
+  @apply mt-24 overflow-hidden;
+  &.animation {
+    > div {
+      animation: toRight 1.5s ease-in-out forwards;
+    }
+  }
+  > div {
+    @apply relative w-12 md:w-28 h-12 md:h-28 bg-secondary;
+    &:before {
+      content: '';
+      @apply absolute right-0 bottom-0 bg-secondary h-[3px] w-screen;
     }
   }
 }
 
-.frictionless {
-  &:hover, &:active {
-    .square-to-circle {
-      > div {
-        animation: toRight 1.5s ease-in-out forwards;
-      }
-    }
+.bridging {
+  &.animation {
+    @apply md:max-w-[352px];
   }
-  .square-to-circle {
-    @apply mt-24 overflow-hidden;
-    > div {
-      @apply relative w-12 md:w-28 h-12 md:h-28 bg-secondary;
-      &:before {
-        content: '';
-        @apply absolute right-0 bottom-0 bg-secondary h-[3px] w-screen;
-      }
-    }
-  }
+  @apply my-4 md:my-36 flex justify-between items-center relative max-w-[2000px] transition-all ease-in-out duration-1000;
 }
 
 

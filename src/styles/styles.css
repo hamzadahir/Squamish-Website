@@ -551,11 +551,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -714,10 +709,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[280px\] {
   max-width: 280px;
-}
-
-.max-w-\[2000px\] {
-  max-width: 2000px;
 }
 
 .translate-x-1\/2 {
@@ -888,20 +879,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /** Import theme styles */
@@ -1407,30 +1384,30 @@ a {
   }
 }
 
-.trusted:hover .square-big:before, .trusted:active .square-big:before {
-  width: 100%;
-  -webkit-animation: hide 0s linear .7s forwards;
-          animation: hide 0s linear .7s forwards;
-}
-
-.trusted:hover .square-big div, .trusted:active .square-big div {
-  -webkit-animation: show 0s linear .7s forwards;
-          animation: show 0s linear .7s forwards;
-}
-
-.trusted .square-big {
+.square-big {
   position: relative;
   margin-top: 1.25rem;
   display: inline-flex;
 }
 
 @media (min-width: 768px) {
-  .trusted .square-big {
+  .square-big {
     margin-top: 5rem;
   }
 }
 
-.trusted .square-big:before {
+.square-big.animation:before {
+  width: 100%;
+  -webkit-animation: hide 0s linear .7s forwards;
+          animation: hide 0s linear .7s forwards;
+}
+
+.square-big.animation div {
+  -webkit-animation: show 0s linear .7s forwards;
+          animation: show 0s linear .7s forwards;
+}
+
+.square-big:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -1448,12 +1425,12 @@ a {
 }
 
 @media (min-width: 768px) {
-  .trusted .square-big:before {
+  .square-big:before {
     width: 6rem;
   }
 }
 
-.trusted .square-big div {
+.square-big div {
   height: 1.75rem;
   width: 1.75rem;
   --tw-bg-opacity: 1;
@@ -1463,23 +1440,23 @@ a {
 }
 
 @media (min-width: 768px) {
-  .trusted .square-big div {
+  .square-big div {
     height: 6rem;
     width: 6rem;
   }
 }
 
-.frictionless:hover .square-to-circle > div, .frictionless:active .square-to-circle > div {
-  -webkit-animation: toRight 1.5s ease-in-out forwards;
-          animation: toRight 1.5s ease-in-out forwards;
-}
-
-.frictionless .square-to-circle {
+.square-to-circle {
   margin-top: 6rem;
   overflow: hidden;
 }
 
-.frictionless .square-to-circle > div {
+.square-to-circle.animation > div {
+  -webkit-animation: toRight 1.5s ease-in-out forwards;
+          animation: toRight 1.5s ease-in-out forwards;
+}
+
+.square-to-circle > div {
   position: relative;
   height: 3rem;
   width: 3rem;
@@ -1488,13 +1465,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  .frictionless .square-to-circle > div {
+  .square-to-circle > div {
     height: 7rem;
     width: 7rem;
   }
 }
 
-.frictionless .square-to-circle > div:before {
+.square-to-circle > div:before {
   content: '';
   position: absolute;
   right: 0px;
@@ -1503,6 +1480,30 @@ a {
   width: 100vw;
   --tw-bg-opacity: 1;
   background-color: rgb(237 31 39 / var(--tw-bg-opacity));
+}
+
+.bridging {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  max-width: 2000px;
+  align-items: center;
+  justify-content: space-between;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .bridging {
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+  }
+
+  .bridging.animation {
+    max-width: 352px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1600,11 +1601,6 @@ a {
 
   .md\:bottom-0 {
     bottom: 0px;
-  }
-
-  .md\:my-36 {
-    margin-top: 9rem;
-    margin-bottom: 9rem;
   }
 
   .md\:mb-0 {
@@ -1817,10 +1813,6 @@ a {
 
   .md\:leading-snug {
     line-height: 1.375;
-  }
-
-  .group:hover .md\:group-hover\:max-w-\[352px\] {
-    max-width: 352px;
   }
 }
 
