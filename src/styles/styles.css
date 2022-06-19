@@ -526,10 +526,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: -4rem;
 }
 
-.left-1\/2 {
-  left: 50%;
-}
-
 .z-30 {
   z-index: 30;
 }
@@ -1059,6 +1055,7 @@ a {
 }
 
 .btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   text-transform: uppercase;
@@ -1069,9 +1066,13 @@ a {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 768px) {
+  .btn:hover div:nth-child(2) {
+    margin-right: 8rem;
+  }
+}
+
 .btn:hover div.text {
-  margin-left: 0.5rem;
-  max-width: 130px;
   opacity: 1;
 }
 
@@ -1125,11 +1126,28 @@ a {
 
 @media (min-width: 768px) {
   .btn div.text {
-    margin-left: 0px;
-    max-width: 0rem;
+    position: absolute;
+    right: 1.75rem;
+    top: 50%;
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    line-height: 1;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn div.text {
     font-size: 1.25rem;
     line-height: 1.75rem;
-    opacity: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .btn div.text {
+    right: 2.25rem;
   }
 }
 
