@@ -7,9 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
-h2 {
+h1, h2 {
   // font-size: 80px
-  @apply mb-4 text-3xl lg:text-5xl xl:text-[80px] leading-snug md:leading-snug lg:leading-snug font-light;
+  line-height: 1.325 !important;
+  @apply mb-4 text-3xl lg:text-5xl xl:text-[80px] font-light;
   span {
     @apply font-bold;
   }

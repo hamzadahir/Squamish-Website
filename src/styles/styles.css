@@ -632,14 +632,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
-.\!mt-4 {
-  margin-top: 1rem !important;
-}
-
-.\!mt-3 {
-  margin-top: 0.75rem !important;
-}
-
 .block {
   display: block;
 }
@@ -954,34 +946,28 @@ html {
   scroll-behavior: smooth;
 }
 
-h2 {
+h1, h2 {
+  line-height: 1.325 !important;
   margin-bottom: 1rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 300;
-  line-height: 1.375;
-}
-
-@media (min-width: 768px) {
-  h2 {
-    line-height: 1.375;
-  }
 }
 
 @media (min-width: 1024px) {
-  h2 {
+  h1, h2 {
     font-size: 3rem;
-    line-height: 1.375;
+    line-height: 1;
   }
 }
 
 @media (min-width: 1280px) {
-  h2 {
+  h1, h2 {
     font-size: 80px;
   }
 }
 
-h2 span {
+h1 span, h2 span {
   font-weight: 700;
 }
 
@@ -1667,10 +1653,6 @@ a {
     margin-bottom: 1rem;
   }
 
-  .md\:\!mt-3 {
-    margin-top: 0.75rem !important;
-  }
-
   .md\:block {
     display: block;
   }
@@ -1695,8 +1677,8 @@ a {
     width: 11rem;
   }
 
-  .md\:w-6\/12 {
-    width: 50%;
+  .md\:w-\[52\%\] {
+    width: 52%;
   }
 
   .md\:w-full {
@@ -1707,8 +1689,16 @@ a {
     width: 5rem;
   }
 
+  .md\:w-\[48\%\] {
+    width: 48%;
+  }
+
   .md\:w-7\/12 {
     width: 58.333333%;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
   }
 
   .md\:w-5\/12 {
@@ -1852,6 +1842,10 @@ a {
 
   .xl\:\!mt-3 {
     margin-top: 0.75rem !important;
+  }
+
+  .xl\:min-w-\[810px\] {
+    min-width: 810px;
   }
 
   .xl\:max-w-\[540px\] {
