@@ -526,6 +526,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: -4rem;
 }
 
+.left-\[55\%\] {
+  left: 55%;
+}
+
 .z-30 {
   z-index: 30;
 }
