@@ -25,6 +25,11 @@ h3 {
 }
 
 h5 {
+  // font-size: 25px
+  @apply text-[15px] xl:text-[25px] font-bold;
+}
+
+h6 {
   // font-size: 20px
   @apply text-[15px] xl:text-xl font-bold;
 }
