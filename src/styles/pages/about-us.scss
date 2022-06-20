@@ -1,0 +1,12 @@
+.about-us-page {
+  .quote {
+    @apply mb-0 relative pt-24 xl:pt-40 pb-4;
+    &:before, &:after {
+      content: '“';
+      @apply absolute left-0 -top-[18px] xl:-top-[45px] text-[300px] xl:text-[531px] text-secondary leading-none;
+    }
+    &:after {
+      @apply left-[initial] top-[initial] right-0 -bottom-[90px] xl:-bottom-[170px] rotate-180;
+    }
+  }
+}
