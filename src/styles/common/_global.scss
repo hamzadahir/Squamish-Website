@@ -73,6 +73,9 @@ a {
     &:not(:nth-child(1)) {
       @apply ml-2;
     }
+    &:nth-child(2) {
+      @apply ml-0 md:ml-2;
+    }
     &.text {
       @apply text-[15px] md:text-lg lg:text-xl md:absolute md:right-7 xl:right-9 md:top-1/2 md:-translate-y-1/2 md:leading-none md:opacity-0 text-secondary whitespace-nowrap transition-all duration-500;
     }
