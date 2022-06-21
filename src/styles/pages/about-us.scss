@@ -4,13 +4,13 @@
     transform-origin: bottom;
   }
   .quote {
-    @apply mb-0 relative pt-24 xl:pt-40 pb-0;
+    @apply mb-0 relative pt-32 xl:pt-40 pb-0;
     &:before, &:after {
       content: '“';
-      @apply absolute left-0 -top-[18px] xl:-top-[32px] text-[300px] xl:text-[531px] text-secondary leading-none;
+      @apply absolute left-0 top-[16px] xl:-top-[32px] text-[300px] xl:text-[531px] text-secondary leading-none;
     }
     &:after {
-      @apply left-[initial] top-[initial] right-0 -bottom-[90px] xl:-bottom-[150px] rotate-180;
+      @apply left-[initial] top-[initial] right-0 -bottom-[110px] xl:-bottom-[150px] rotate-180;
     }
   }
   .circle {
@@ -21,7 +21,7 @@
     }
   }
   .our-products {
-    @apply flex flex-wrap md:flex-nowrap items-center justify-center space-y-4 md:space-y-0;
+    @apply flex flex-wrap md:flex-nowrap items-center justify-center max-w-[300px] md:max-w-[100%] space-y-8 md:space-y-0;
     &.animation {
       li:not(.first) {
         animation: 1s maxWidthXl ease-in-out forwards;
@@ -135,7 +135,7 @@
   }
   .contacts {
     li {
-      @apply mb-6 md:mb-12;
+      @apply mb-4 md:mb-12;
       p {
         @apply text-[15px] lg:text-3xl mb-0;
       }
