@@ -53,7 +53,8 @@
                         We provide an end-to-end platform to enable traditional financial service operators capture
                         growth opportunities fulled by the advent of digital assets.
                     </p>
-                    <img class='line-chart hidden md:block mt-24 xl:mt-44 w-1/2' src='./images/icons/line-chart.svg' alt=''>
+                    <img class='line-chart hidden md:block mt-24 xl:mt-44 w-1/2' src='./images/icons/line-chart.svg'
+                         alt=''>
                 </div>
                 <div class='w-full md:w-1/2'>
                     <p class='quote'>
@@ -93,7 +94,7 @@
                         <div></div>
                     </a>
                 </div>
-                <div class='-mt-10 md:mt-0 w-full md:w-[40%]'>
+                <div id='circle' class='circle -mt-10 md:mt-0 w-full md:w-[40%]'>
                     <img class='ml-auto md:mx-auto max-w-[40%] md:max-w-[100%]' src='./images/icons/circle.svg' alt=''>
                 </div>
             </div>
@@ -119,30 +120,32 @@
                     </div>
                 </div>
                 <div class='flex items-center justify-center md:justify-start mt:16 md:mt-36'>
-                    <p class='hidden md:block text-secondary uppercase mr-36 mb-0'>OUR PRODUCTS</p>
-                    <ul class='flex flex-wrap md:flex-nowrap items-center justify-center space-x-8 space-y-4 md:space-y-0 md:space-x-8 xl:space-x-24'>
-                        <li class='hidden md:block w-24 min-w-[96px] xl:min-w-[144px] xl:w-36 h-24 xl:h-36 bg-secondary rounded-full'></li>
-                        <li><a href='#'>
-                            <img class='max-h-[50px] md:max-h-[80px]' src='./images/icons/service-1.svg' alt=''>
-                        </a></li>
+                    <p class='hidden md:block text-secondary uppercase mr-10 xl:mr-36 mb-0'>OUR PRODUCTS</p>
+                    <ul id='our-products' class='our-products'>
+                        <li class='first'></li>
                         <li>
                             <a href='#'>
-                                <img class='max-h-[50px] md:max-h-[80px]' src='./images/icons/service-2.svg' alt=''>
+                                <img src='./images/icons/service-1.svg' alt=''>
                             </a>
                         </li>
                         <li>
                             <a href='#'>
-                                <img class='max-h-[50px] md:max-h-[80px]' src='./images/icons/service-3.svg' alt=''>
+                                <img src='./images/icons/service-2.svg' alt=''>
                             </a>
                         </li>
                         <li>
                             <a href='#'>
-                                <img class='max-h-[50px] md:max-h-[80px]' src='./images/icons/service-4.svg' alt=''>
+                                <img src='./images/icons/service-3.svg' alt=''>
                             </a>
                         </li>
                         <li>
                             <a href='#'>
-                                <img class='max-h-[50px] md:max-h-[80px]' src='./images/icons/service-5.svg' alt=''>
+                                <img src='./images/icons/service-4.svg' alt=''>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='./images/icons/service-5.svg' alt=''>
                             </a>
                         </li>
                     </ul>
@@ -167,10 +170,15 @@
                         secured path to the next generation of financial services.
                     </p>
                 </div>
-                <a href='#' class='mx-auto mt-4 md:mt-12 btn'>
+                <a id='explore-insights' href='#'
+                   class='explore-insights mt-24 hidden md:flex justify-center items-end transition-all hover:opacity-60 overflow-hidden'>
+                    <img class='w-20 mr-4' src='./images/icons/arrow.svg' alt=''>
+                    <p class='mb-0 text-secondary uppercase'>EXPLORE INSIGHTS</p>
+                </a>
+                <a href='#' class='mx-auto mt-4 md:hidden btn'>
                     <div></div>
                     <div></div>
-                    <div class='text'>learn more</div>
+                    <div class='text'>EXPLORE INSIGHTS</div>
                     <div></div>
                 </a>
             </div>
@@ -198,7 +206,7 @@
                     <a href='#' class='btn'>
                         <div></div>
                         <div></div>
-                        <div class='text'>learn more</div>
+                        <div class='text'>OUR HISTORY</div>
                         <div></div>
                     </a>
                 </div>
@@ -207,12 +215,12 @@
     </section>
     <section class='my-10 md:my-20'>
         <div class='container'>
-            <div class='flex flex-col md:flex-row items-start md:space-x-12'>
+            <div class='flex flex-col lg:flex-row items-start lg:space-x-12'>
                 <h2 class='w-full md:w-3/12'>
                     Board of <br />
                     <span>Directors</span>
                 </h2>
-                <ul class='directors'>
+                <ul id='directors' class='directors'>
                     <li>
                         <img src='./images/team/team-1.jpg' alt=''>
                         <h5>
