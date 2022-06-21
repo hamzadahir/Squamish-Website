@@ -482,9 +482,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 2rem;
 }
 
-@media (min-width: 1672px){
+@media (min-width: 1700px){
   .container{
-    max-width: 1672px;
+    max-width: 1700px;
   }
 }
 
@@ -524,8 +524,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
-.bottom-0{
-  bottom: 0px;
+.bottom-12{
+  bottom: 3rem;
 }
 
 .-left-8{
@@ -554,11 +554,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-10{
   z-index: 10;
-}
-
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .mx-auto{
@@ -591,6 +586,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .-mt-10{
   margin-top: -2.5rem;
 }
@@ -603,20 +602,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2.5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mt-28{
+  margin-top: 7rem;
 }
 
 .mr-4{
   margin-right: 1rem;
 }
 
-.mt-4{
-  margin-top: 1rem;
-}
-
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mt-6{
@@ -635,20 +646,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .\!mt-2{
   margin-top: 0.5rem !important;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .mb-14{
@@ -731,8 +730,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 33.333333%;
 }
 
-.w-1\/2{
-  width: 50%;
+.w-\[44\%\]{
+  width: 44%;
 }
 
 .w-20{
@@ -935,20 +934,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 5rem;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
 
 .pb-12{
   padding-bottom: 3rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
 }
 
 .pb-32{
@@ -1766,7 +1761,7 @@ a{
   position: relative;
   margin-bottom: 0px;
   padding-top: 6rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 1280px){
@@ -1788,7 +1783,7 @@ a{
 
 @media (min-width: 1280px){
   .about-us-page .quote:before, .about-us-page .quote:after{
-    top: -45px;
+    top: -32px;
     font-size: 531px;
   }
 }
@@ -1804,7 +1799,7 @@ a{
 
 @media (min-width: 1280px){
   .about-us-page .quote:after{
-    bottom: -170px;
+    bottom: -150px;
   }
 }
 
@@ -2071,6 +2066,7 @@ a{
 .about-us-page .team{
   margin-bottom: 2.5rem;
   display: flex;
+  max-width: 1547px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -2078,7 +2074,7 @@ a{
 
 @media (min-width: 768px){
   .about-us-page .team{
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     flex-direction: row;
   }
 
@@ -2106,6 +2102,7 @@ a{
 
 @media (min-width: 768px){
   .about-us-page .team.simple .info{
+    max-width: 780px;
     flex-direction: row;
     flex-direction: row-reverse;
     text-align: right;
@@ -2151,14 +2148,14 @@ a{
 @media (min-width: 768px){
   .about-us-page .team .info img{
     margin-bottom: 0px;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
   }
 }
 
 @media (min-width: 1280px){
   .about-us-page .team .info img{
-    max-width: 301px;
+    max-width: 307px;
   }
 }
 
@@ -2182,6 +2179,12 @@ a{
   font-style: italic;
 }
 
+@media (min-width: 768px){
+  .about-us-page .team .info p.subTitle{
+    margin-bottom: 2rem;
+  }
+}
+
 @media (min-width: 1024px){
   .about-us-page .team .info p.subTitle{
     font-size: 20px;
@@ -2197,6 +2200,7 @@ a{
 
 @media (min-width: 768px){
   .about-us-page .partners{
+    margin-top: 4rem;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -2218,6 +2222,12 @@ a{
 
 .about-us-page .contacts li{
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px){
+  .about-us-page .contacts li{
+    margin-bottom: 3rem;
+  }
 }
 
 .about-us-page .contacts li p{
@@ -2475,14 +2485,14 @@ a{
     margin-right: auto;
   }
 
-  .md\:my-24{
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-  }
-
   .md\:my-20{
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+
+  .md\:my-24{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 
   .md\:mr-5{
@@ -2493,6 +2503,14 @@ a{
     margin-top: 0px;
   }
 
+  .md\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .md\:mb-20{
+    margin-bottom: 5rem;
+  }
+
   .md\:mt-36{
     margin-top: 9rem;
   }
@@ -2501,12 +2519,12 @@ a{
     margin-bottom: 3rem;
   }
 
-  .md\:mt-20{
-    margin-top: 5rem;
+  .md\:mb-36{
+    margin-bottom: 9rem;
   }
 
-  .md\:mt-12{
-    margin-top: 3rem;
+  .md\:mt-16{
+    margin-top: 4rem;
   }
 
   .md\:ml-auto{
@@ -2537,10 +2555,6 @@ a{
     margin-top: 7rem;
   }
 
-  .md\:mb-20{
-    margin-bottom: 5rem;
-  }
-
   .md\:mt-24{
     margin-top: 6rem;
   }
@@ -2551,10 +2565,6 @@ a{
 
   .md\:mb-72{
     margin-bottom: 18rem;
-  }
-
-  .md\:mt-16{
-    margin-top: 4rem;
   }
 
   .md\:mb-1{
@@ -2597,20 +2607,24 @@ a{
     width: 11rem;
   }
 
-  .md\:w-\[48\%\]{
-    width: 48%;
+  .md\:w-\[43\%\]{
+    width: 43%;
   }
 
-  .md\:w-1\/2{
-    width: 50%;
+  .md\:w-\[41\%\]{
+    width: 41%;
   }
 
   .md\:w-\[36\%\]{
     width: 36%;
   }
 
-  .md\:w-\[40\%\]{
-    width: 40%;
+  .md\:w-\[44\%\]{
+    width: 44%;
+  }
+
+  .md\:w-\[42\%\]{
+    width: 42%;
   }
 
   .md\:w-4\/12{
@@ -2621,8 +2635,8 @@ a{
     width: 25%;
   }
 
-  .md\:w-5\/12{
-    width: 41.666667%;
+  .md\:w-\[48\%\]{
+    width: 48%;
   }
 
   .md\:w-\[52\%\]{
@@ -2643,6 +2657,10 @@ a{
 
   .md\:w-6\/12{
     width: 50%;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
   }
 
   .md\:min-w-\[350px\]{
@@ -2677,12 +2695,6 @@ a{
     justify-content: space-between;
   }
 
-  .md\:space-x-12 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(3rem * var(--tw-space-x-reverse));
-    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -2711,32 +2723,36 @@ a{
     padding-top: 8rem;
   }
 
-  .md\:pb-12{
-    padding-bottom: 3rem;
+  .md\:pb-24{
+    padding-bottom: 6rem;
+  }
+
+  .md\:pt-28{
+    padding-top: 7rem;
+  }
+
+  .md\:pb-32{
+    padding-bottom: 8rem;
+  }
+
+  .md\:pb-36{
+    padding-bottom: 9rem;
   }
 
   .md\:pb-16{
     padding-bottom: 4rem;
   }
 
-  .md\:pb-10{
-    padding-bottom: 2.5rem;
-  }
-
   .md\:pt-20{
     padding-top: 5rem;
-  }
-
-  .md\:pb-24{
-    padding-bottom: 6rem;
   }
 
   .md\:pl-\[4\%\]{
     padding-left: 4%;
   }
 
-  .md\:pt-28{
-    padding-top: 7rem;
+  .md\:pb-12{
+    padding-bottom: 3rem;
   }
 
   .md\:pt-8{
@@ -2799,16 +2815,16 @@ a{
     flex-direction: row;
   }
 
-  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-  }
-
   .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:text-xl{

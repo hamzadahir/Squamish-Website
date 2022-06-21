@@ -8,7 +8,7 @@ module.exports = {
         sm: '1rem',
       },
       screens: {
-        '2xl': '1672px',
+        '2xl': '1700px',
       },
     },
     extend: {
