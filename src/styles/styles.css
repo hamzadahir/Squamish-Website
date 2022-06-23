@@ -674,6 +674,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -694,12 +698,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
+.h-2{
+  height: 0.5rem;
+}
+
 .h-10{
   height: 2.5rem;
 }
 
 .h-\[3px\]{
   height: 3px;
+}
+
+.h-4{
+  height: 1rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .min-h-\[228px\]{
@@ -754,6 +770,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
+.w-2{
+  width: 0.5rem;
+}
+
 .w-screen{
   width: 100vw;
 }
@@ -764,6 +784,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-8\/12{
   width: 66.666667%;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .max-w-\[150px\]{
@@ -800,6 +828,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[280px\]{
   max-width: 280px;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .translate-x-1\/2{
@@ -861,6 +893,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between{
   justify-content: space-between;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -2475,6 +2513,10 @@ a{
   opacity: 0.6;
 }
 
+.group:hover .group-hover\:ml-4{
+  margin-left: 1rem;
+}
+
 .group:hover .group-hover\:block{
   display: block;
 }
@@ -2515,6 +2557,10 @@ a{
   .md\:my-24{
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+
+  .md\:mr-0{
+    margin-right: 0px;
   }
 
   .md\:mt-0{
@@ -2569,10 +2615,6 @@ a{
     margin-right: 3rem;
   }
 
-  .md\:mr-0{
-    margin-right: 0px;
-  }
-
   .md\:mb-16{
     margin-bottom: 4rem;
   }
@@ -2625,6 +2667,10 @@ a{
     height: 11rem;
   }
 
+  .md\:h-8{
+    height: 2rem;
+  }
+
   .md\:w-44{
     width: 11rem;
   }
@@ -2661,6 +2707,10 @@ a{
     width: 48%;
   }
 
+  .md\:w-5\/12{
+    width: 41.666667%;
+  }
+
   .md\:w-\[52\%\]{
     width: 52%;
   }
@@ -2681,8 +2731,8 @@ a{
     width: 50%;
   }
 
-  .md\:w-5\/12{
-    width: 41.666667%;
+  .md\:w-8{
+    width: 2rem;
   }
 
   .md\:min-w-\[350px\]{
@@ -2694,6 +2744,10 @@ a{
   }
 
   .md\:max-w-\[100\%\]{
+    max-width: 100%;
+  }
+
+  .md\:max-w-full{
     max-width: 100%;
   }
 
