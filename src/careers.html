@@ -29,7 +29,7 @@
     </div>
 </header>
 <main>
-    <section id='banner' class='pt-20 md:pt-32'>
+    <section id='banner' class='pt-20 md:pt-32 overflow-hidden'>
         <a href='#banner'
            class='group fixed z-40 right-0 top-1/2 translate-x-1/2 w-24 h-20 flex items-center bg-secondary rounded-full cursor-pointer'>
             <img class='w-5 absolute top-1/2 -translate-y-1/2 left-5 group-hover:hidden'
@@ -38,56 +38,56 @@
                  src='./images/icons/triangle-white.svg' alt=''>
         </a>
         <div class='container'>
-            <div class='py-10 md:py-20 border-b border-b-primary flex items-end justify-between flex-col-reverse md:flex-row'>
+            <div class='pt-10 pb-10 md:pt-40 md:pb-16 border-b border-b-primary flex items-end justify-between flex-col-reverse md:flex-row'>
                 <div class='w-full md:w-7/12'>
                     <h1>
                         <span>Build</span> the <br /> future of digital <br /> asset markets
                     </h1>
-                    <a href='#' class='btn-second'>
+                    <a href='#opportunities' class='btn-second'>
                         View open roles
                         <span></span>
                         <span></span>
                     </a>
                 </div>
-                <div class='w-full md:w-4/12 mb-12 md:mb-0 max-w-sm md:max-w-full'>
-                    <img class='w-full' src='./images/careers-banner.png' alt=''>
+                <div class='w-screen max-w-none w-full md:w-5/12 mb-8 md:mb-0 max-w-sm md:max-w-full'>
+                    <img src='./images/careers-banner.png' alt=''>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id='come-work' class='overflow-hidden'>
         <div class='container'>
-            <div class='py-10 md:py-20 border-b border-b-primary flex justify-between flex-col md:flex-row'>
-                <div class='w-full md:w-1/2 flex flex-col'>
-                    <h3 class='pb-4 text-secondary'>
+            <div class='pt-10 pb-6 md:pt-32 md:pb-20 border-b border-b-primary flex justify-between flex-col md:flex-row'>
+                <div class='left w-full md:w-1/2 flex flex-col'>
+                    <h3 class='pb-1 md:pb-2 text-secondary'>
                         Cutting-edge work
                     </h3>
                     <div class='w-full h-0.5 bg-secondary'>
                         <span class='w-4 h-4 bg-secondary inline-block rounded-full -translate-y-1/2 -translate-x-1/2'></span>
                     </div>
                     <div class='flex-auto border-r-2 border-r-secondary'>
-                        <p class='mb-0 pt-4 text-secondary pr-20'>
+                        <p class='mb-0 pt-4 text-secondary pr-28'>
                             We’re collectively driven toward very ambitious goals, we’re looking for teammates who are
                             equally motivated and driven as individuals.
                         </p>
                     </div>
                 </div>
-                <div class='w-full md:w-1/2 pt-0 md:pt-20 ml-auto text-right md:text-left'>
-                    <h3 class='mb-0 pb-4 pl-4 md:pl-20 pt-4 pt-0 text-secondary pr-4 md:pr-0 border-r-2 border-r-secondary md:border-r-0'>
+                <div class='right w-full md:w-1/2 pt-0 md:pt-36 ml-auto text-right md:text-left'>
+                    <h3 class='mb-0 pb-4 pl-4 md:pl-28 pt-7 md:pt-0 text-secondary pr-4 md:pr-0 border-r-2 border-r-secondary md:border-r-0'>
                         Our commitment <br />
                         to belonging
                     </h3>
                     <div class='w-full h-0.5 bg-secondary text-right'>
                         <span class='w-4 h-4 bg-secondary inline-block rounded-full -translate-y-1/2 translate-x-1/2'></span>
                     </div>
-                    <p class='mb-0 pt-4 pl-4 md:pl-20 pb-10 md:pb-20 pr-4 md:pr-0 border-l-2 border-l-secondary md:border-l-0 text-secondary'>
+                    <p class='mb-0 pt-4 pl-4 md:pl-28 md:pr-20 pb-8 md:pb-24 pr-4 md:pr-0 border-l-2 border-l-secondary md:border-l-0 text-secondary'>
                         We embrace diverse experiences and backgrounds to create better outcomes for our people, our
                         clients and society.
                     </p>
                     <div class='w-1/2 h-0.5 bg-secondary block md:hidden'>
                         <span class='w-4 h-4 bg-secondary inline-block rounded-full -translate-y-1/2 translate-x-1/2'></span>
                     </div>
-                    <h2 class='mt-6 md:mt-0 pl-4 md:pl-20 pr-4 md:pr-0 text-secondary'>
+                    <h2 class='mt-4 md:mt-0 pl-4 md:pl-28 pr-4 md:pr-0 text-secondary'>
                         Come <span class='text-secondary'>work</span> with us
                     </h2>
                     <span class='hidden md:block  w-4 h-4 bg-secondary inline-block rounded-full translate-y-1/2 -translate-x-1/2'></span>
@@ -98,7 +98,7 @@
     <section class='pt-10 md:pt-20'>
         <div class='container'>
             <div>
-                <h2 class='mb-10 md:mb-20'><span>Our</span> philosophy</h2>
+                <h2 class='mb-10 md:mb-12'><span>Our</span> philosophy</h2>
                 <div class='our'>
                     <div class='left'>
                         <h3>
@@ -115,7 +115,7 @@
                         <img src='./images/philosophy-1.png' alt=''>
                     </div>
                 </div>
-                <div class='our'>
+                <div class='our bottom-left'>
                     <div class='left'>
                         <h3>
                             We <span>look</span> out <br />
@@ -131,7 +131,7 @@
                         <img src='./images/philosophy-2.png' alt=''>
                     </div>
                 </div>
-                <div class='our'>
+                <div class='our bottom-right'>
                     <div class='left'>
                         <h3>
                             With transparency <br />
@@ -152,7 +152,7 @@
     </section>
     <section>
         <div class='container'>
-            <div class='pb-10 md:pb-20 border-b border-b-primary'>
+            <div class='pt-2 md:mt-0 pb-3 md:pb-16 border-b border-b-primary'>
                 <div class='flex flex-col md:flex-row justify-between items-center text-center md:text-left'>
                     <div class='w-full md:w-1/2'>
                         <h2>
@@ -162,7 +162,7 @@
                         </h2>
                     </div>
                     <div class='w-full md:w-7/12'>
-                        <h3>
+                        <h3 class='text-2xl	md:xl:text-[50px] !leading-snug'>
                             “It’s unbelievable how I found at SBI Digital Markets the smartest, most transparent and
                             encouraging people I’ve ever met. It’s a pleasure to work here.”
                         </h3>
@@ -171,13 +171,13 @@
             </div>
         </div>
     </section>
-    <section class='my-10 md:my-20'>
+    <section id='opportunities' class='mt-10 mb-10 md:mt-20 md:mb-28'>
         <div class='container'>
             <h2 class='mb-10 md:mb-20'><span>Current</span> opportunities</h2>
             <div class='opportunities'>
                 <div class='info'>
                     <p class='title'>Admin</p>
-                    <p>Executive Assistant to Advisory Team Singapore</p>
+                    <p>Executive Assistant to Advisory Teamss</p>
                     <p>Singapore</p>
                 </div>
                 <a href='#' class='btn-second'>

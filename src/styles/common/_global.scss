@@ -87,7 +87,7 @@ a {
 
 .btn-second {
   @apply text-[15px] md:text-3xl mb-0 text-secondary flex items-center cursor-pointer;
-  &:hover:nth-child(1) {
+  &:hover span:nth-child(1) {
     @apply ml-4;
   }
   span {

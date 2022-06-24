@@ -642,12 +642,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .\!mt-2{
@@ -770,16 +770,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
+.w-screen{
+  width: 100vw;
+}
+
 .w-4{
   width: 1rem;
 }
 
 .w-1\/2{
   width: 50%;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .w-12{
@@ -814,12 +814,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 32rem;
 }
 
-.max-w-sm{
-  max-width: 24rem;
-}
-
 .max-w-none{
   max-width: none;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .max-w-\[300px\]{
@@ -1012,36 +1012,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3rem;
 }
 
-.pb-4{
-  padding-bottom: 1rem;
+.pb-1{
+  padding-bottom: 0.25rem;
 }
 
 .pt-4{
   padding-top: 1rem;
 }
 
-.pr-20{
-  padding-right: 5rem;
+.pr-28{
+  padding-right: 7rem;
 }
 
 .pt-0{
   padding-top: 0px;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .pl-4{
   padding-left: 1rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
 }
 
 .pr-4{
   padding-right: 1rem;
 }
 
-.pb-32{
-  padding-bottom: 8rem;
-}
-
 .pb-8{
   padding-bottom: 2rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
+.pb-32{
+  padding-bottom: 8rem;
 }
 
 .pr-12{
@@ -1060,6 +1076,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 15px;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1071,6 +1092,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-snug{
   line-height: 1.375;
+}
+
+.\!leading-snug{
+  line-height: 1.375 !important;
 }
 
 .text-secondary{
@@ -1374,7 +1399,7 @@ a{
   }
 }
 
-.btn-second:hover:nth-child(1){
+.btn-second:hover span:nth-child(1){
   margin-left: 1rem;
 }
 
@@ -2580,8 +2605,56 @@ a{
   }
 }
 
+.careers-page #come-work .left{
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.careers-page #come-work .left h3, .careers-page #come-work .left p{
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.careers-page #come-work .right{
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.careers-page #come-work .right h3, .careers-page #come-work .right p, .careers-page #come-work .right h2{
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.careers-page #come-work.animation .left{
+  opacity: 1;
+}
+
+.careers-page #come-work.animation .left h3, .careers-page #come-work.animation .left p{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.careers-page #come-work.animation .right{
+  opacity: 1;
+}
+
+.careers-page #come-work.animation .right h3, .careers-page #come-work.animation .right p, .careers-page #come-work.animation .right h2{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .careers-page .our{
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -2594,9 +2667,41 @@ a{
 
 @media (min-width: 768px){
   .careers-page .our{
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     flex-direction: row;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.careers-page .our.bottom-left .right img{
+  min-height: 263px;
+  width: 100%;
+  border-bottom-left-radius: 140px;
+  border-top-right-radius: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px){
+  .careers-page .our.bottom-left .right img{
+    border-bottom-left-radius: 172px;
+    border-top-right-radius: 0px;
+  }
+}
+
+.careers-page .our.bottom-right .right img{
+  min-height: 263px;
+  width: 100%;
+  border-bottom-right-radius: 140px;
+  border-top-right-radius: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px){
+  .careers-page .our.bottom-right .right img{
+    border-bottom-right-radius: 172px;
+    border-top-right-radius: 0px;
   }
 }
 
@@ -2606,7 +2711,7 @@ a{
 
 @media (min-width: 768px){
   .careers-page .our .left{
-    width: 44%;
+    width: 41%;
   }
 }
 
@@ -2616,25 +2721,35 @@ a{
 
 @media (min-width: 768px){
   .careers-page .our .right{
-    width: 44%;
+    width: 50%;
   }
 }
 
 .careers-page .our .right img{
+  min-height: 263px;
   width: 100%;
+  border-top-right-radius: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px){
+  .careers-page .our .right img{
+    border-top-right-radius: 172px;
+  }
 }
 
 .careers-page .opportunities{
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
 @media (min-width: 768px){
   .careers-page .opportunities{
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     flex-direction: row;
   }
 }
@@ -2660,6 +2775,13 @@ a{
 
 .careers-page .opportunities a{
   margin-left: auto;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px){
+  .careers-page .opportunities a{
+    margin-top: 0px;
+  }
 }
 
 .hover\:opacity-60:hover{
@@ -2764,6 +2886,10 @@ a{
     margin-right: 3rem;
   }
 
+  .md\:mb-28{
+    margin-bottom: 7rem;
+  }
+
   .md\:mb-16{
     margin-bottom: 4rem;
   }
@@ -2856,6 +2982,10 @@ a{
     width: 58.333333%;
   }
 
+  .md\:w-5\/12{
+    width: 41.666667%;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -2874,10 +3004,6 @@ a{
 
   .md\:w-6\/12{
     width: 50%;
-  }
-
-  .md\:w-5\/12{
-    width: 41.666667%;
   }
 
   .md\:min-w-\[350px\]{
@@ -2972,20 +3098,40 @@ a{
     padding-bottom: 4rem;
   }
 
-  .md\:pt-20{
-    padding-top: 5rem;
+  .md\:pt-56{
+    padding-top: 14rem;
   }
 
-  .md\:pl-20{
-    padding-left: 5rem;
+  .md\:pb-20{
+    padding-bottom: 5rem;
+  }
+
+  .md\:pb-2{
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:pt-36{
+    padding-top: 9rem;
+  }
+
+  .md\:pl-28{
+    padding-left: 7rem;
+  }
+
+  .md\:pt-0{
+    padding-top: 0px;
   }
 
   .md\:pr-0{
     padding-right: 0px;
   }
 
-  .md\:pb-20{
-    padding-bottom: 5rem;
+  .md\:pr-20{
+    padding-right: 5rem;
+  }
+
+  .md\:pt-20{
+    padding-top: 5rem;
   }
 
   .md\:pl-\[4\%\]{
@@ -3004,12 +3150,12 @@ a{
     padding-right: 4rem;
   }
 
-  .md\:pr-20{
-    padding-right: 5rem;
-  }
-
   .md\:pl-\[15\%\]{
     padding-left: 15%;
+  }
+
+  .md\:pt-40{
+    padding-top: 10rem;
   }
 
   .md\:text-left{
@@ -3110,6 +3256,14 @@ a{
   .xl\:translate-x-1\/2{
     --tw-translate-x: 50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 768px){
+  @media (min-width: 1280px){
+    .md\:xl\:text-\[50px\]{
+      font-size: 50px;
+    }
   }
 }
 

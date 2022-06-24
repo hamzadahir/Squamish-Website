@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const exploreInsights = document.getElementById('explore-insights');
   const directors = document.getElementById('directors');
 
+  // animations on scroll on Careers page
+  const comeWork = document.getElementById('come-work');
+
   const scrollTrigger = (selector) => {
     if (selector) {
       if (selector.offsetTop < (window.pageYOffset + window.innerHeight)) {
@@ -41,5 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollTrigger(ourProducts);
     scrollTrigger(exploreInsights);
     scrollTrigger(directors);
+
+    // Careers page
+    scrollTrigger(comeWork);
   });
 });
