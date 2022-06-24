@@ -85,6 +85,16 @@ a {
   }
 }
 
+.btn-second {
+  @apply text-[15px] md:text-3xl mb-0 text-secondary flex items-center cursor-pointer;
+  &:hover:nth-child(1) {
+    @apply ml-4;
+  }
+  span {
+    @apply w-4 md:w-8 h-4 md:h-8 bg-secondary ml-2 transition-all;
+  }
+}
+
 @keyframes showText {
   0% {
     max-width: 0;
