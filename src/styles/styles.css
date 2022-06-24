@@ -528,10 +528,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
-.top-24{
-  top: 6rem;
-}
-
 .-left-8{
   left: -2rem;
 }
@@ -726,10 +722,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3px;
 }
 
-.h-1{
-  height: 0.25rem;
-}
-
 .min-h-\[228px\]{
   min-height: 228px;
 }
@@ -784,14 +776,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4{
   width: 1rem;
-}
-
-.w-0\.5{
-  width: 0.125rem;
-}
-
-.w-0{
-  width: 0px;
 }
 
 .w-1\/2{
@@ -955,16 +939,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-width: 1px;
 }
 
-.border-r{
-  border-right-width: 1px;
-}
-
 .border-r-2{
   border-right-width: 2px;
-}
-
-.border-l{
-  border-left-width: 1px;
 }
 
 .border-l-2{
@@ -981,19 +957,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-color: rgb(31 65 129 / var(--tw-border-opacity));
 }
 
-.border-r-primary{
-  --tw-border-opacity: 1;
-  border-right-color: rgb(31 65 129 / var(--tw-border-opacity));
-}
-
 .border-r-secondary{
   --tw-border-opacity: 1;
   border-right-color: rgb(237 31 39 / var(--tw-border-opacity));
-}
-
-.border-l-primary{
-  --tw-border-opacity: 1;
-  border-left-color: rgb(31 65 129 / var(--tw-border-opacity));
 }
 
 .border-l-secondary{
@@ -1050,6 +1016,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
 .pr-20{
   padding-right: 5rem;
 }
@@ -1058,8 +1032,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0px;
 }
 
-.pl-20{
-  padding-left: 5rem;
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .pb-32{
@@ -1072,30 +1050,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-12{
   padding-right: 3rem;
-}
-
-.pr-4{
-  padding-right: 1rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
-}
-
-.pl-10{
-  padding-left: 2.5rem;
-}
-
-.pl-6{
-  padding-left: 1.5rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .text-center{
@@ -2591,6 +2545,50 @@ a{
   }
 }
 
+.careers-page .our{
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(31 65 129 / var(--tw-border-opacity));
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px){
+  .careers-page .our{
+    margin-bottom: 5rem;
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+}
+
+.careers-page .left{
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .careers-page .left{
+    width: 44%;
+  }
+}
+
+.careers-page .right{
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .careers-page .right{
+    width: 44%;
+  }
+}
+
+.careers-page .right img{
+  width: 100%;
+}
+
 .hover\:opacity-60:hover{
   opacity: 0.6;
 }
@@ -2863,12 +2861,12 @@ a{
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:border-l-0{
-    border-left-width: 0px;
-  }
-
   .md\:border-r-0{
     border-right-width: 0px;
+  }
+
+  .md\:border-l-0{
+    border-left-width: 0px;
   }
 
   .md\:py-20{
@@ -2917,6 +2915,14 @@ a{
     padding-top: 5rem;
   }
 
+  .md\:pl-20{
+    padding-left: 5rem;
+  }
+
+  .md\:pr-0{
+    padding-right: 0px;
+  }
+
   .md\:pb-20{
     padding-bottom: 5rem;
   }
@@ -2943,14 +2949,6 @@ a{
 
   .md\:pl-\[15\%\]{
     padding-left: 15%;
-  }
-
-  .md\:pr-0{
-    padding-right: 0px;
-  }
-
-  .md\:pl-20{
-    padding-left: 5rem;
   }
 
   .md\:text-left{

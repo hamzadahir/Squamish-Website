@@ -1,0 +1,14 @@
+.careers-page {
+  .our {
+    @apply pb-10 md:pb-20 mb-10 md:mb-20 border-b border-b-primary flex items-end flex-col md:flex-row justify-between;
+  }
+  .left {
+    @apply w-full md:w-[44%];
+  }
+  .right {
+    @apply w-full md:w-[44%];
+    img {
+      @apply w-full;
+    }
+  }
+}
