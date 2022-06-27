@@ -13,9 +13,12 @@
       }
     }
   }
+  .label {
+    @apply mb-2 md:absolute md:-left-4 md:top-5 text-[15px] md:text-xl origin-top-left md:rotate-90;
+  }
   .list {
     list-style-type: square;
-    @apply pl-4 md:pl-8;
+    @apply pl-4 md:pl-0;
     li {
       @apply mb-4 text-secondary text-[13px] lg:text-xl xl:text-3xl font-light;
       span {
