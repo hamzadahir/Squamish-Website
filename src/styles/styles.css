@@ -1090,12 +1090,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
-.leading-snug{
-  line-height: 1.375;
-}
-
 .\!leading-snug{
   line-height: 1.375 !important;
+}
+
+.leading-snug{
+  line-height: 1.375;
 }
 
 .text-secondary{
@@ -2784,6 +2784,55 @@ a{
   }
 }
 
+.services-page .services a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(31 65 129 / var(--tw-border-opacity));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: right;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (min-width: 768px){
+  .services-page .services a{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 40px;
+    line-height: 1.375;
+  }
+}
+
+@media (min-width: 1280px){
+  .services-page .services a{
+    font-size: 60px;
+  }
+}
+
+.services-page .services a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(237 31 39 / var(--tw-text-opacity));
+}
+
+.services-page .services a:hover span{
+  --tw-text-opacity: 1;
+  color: rgb(237 31 39 / var(--tw-text-opacity));
+}
+
+.services-page .services a span{
+  margin-left: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .hover\:opacity-60:hover{
   opacity: 0.6;
 }
@@ -2803,6 +2852,10 @@ a{
 }
 
 @media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
   .md\:bottom-12{
     bottom: 3rem;
   }
@@ -2813,6 +2866,10 @@ a{
 
   .md\:bottom-0{
     bottom: 0px;
+  }
+
+  .md\:bottom-16{
+    bottom: 4rem;
   }
 
   .md\:mx-auto{
@@ -3030,6 +3087,10 @@ a{
     align-items: flex-end;
   }
 
+  .md\:items-center{
+    align-items: center;
+  }
+
   .md\:justify-start{
     justify-content: flex-start;
   }
@@ -3098,8 +3159,8 @@ a{
     padding-bottom: 4rem;
   }
 
-  .md\:pt-56{
-    padding-top: 14rem;
+  .md\:pt-40{
+    padding-top: 10rem;
   }
 
   .md\:pb-20{
@@ -3154,8 +3215,8 @@ a{
     padding-left: 15%;
   }
 
-  .md\:pt-40{
-    padding-top: 10rem;
+  .md\:pt-16{
+    padding-top: 4rem;
   }
 
   .md\:text-left{

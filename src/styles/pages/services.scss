@@ -1,0 +1,16 @@
+.services-page {
+  .services {
+    a {
+      @apply flex justify-between items-center text-right text-3xl md:text-[40px] xl:text-[60px] md:leading-snug py-6 md:py-12 border-b border-b-primary transition-all;
+      &:hover {
+        @apply text-secondary;
+        span {
+          @apply text-secondary;
+        }
+      }
+      span {
+        @apply ml-2 transition-all
+      }
+    }
+  }
+}
