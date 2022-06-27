@@ -13,4 +13,13 @@
       }
     }
   }
+  .list {
+    list-style-type: square;
+    li {
+      @apply mb-4 text-secondary text-[13px] lg:text-xl xl:text-3xl font-light;
+      span {
+        @apply text-[13px] leading-snug lg:text-xl xl:text-3xl lg:leading-snug xl:leading-snug font-light text-primary;
+      }
+    }
+  }
 }
