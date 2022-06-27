@@ -85,6 +85,10 @@ a {
   }
 }
 
+.container {
+  max-width: 1732px !important;
+}
+
 .btn-second {
   @apply text-[15px] md:text-3xl mb-0 text-secondary flex items-center cursor-pointer;
   &:hover span:nth-child(1) {
@@ -105,6 +109,6 @@ a {
   }
   100% {
     opacity:   1;
-    max-width: 180px;
+    max-width: 210px;
   }
 }

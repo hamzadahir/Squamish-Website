@@ -15,6 +15,7 @@
   }
   .list {
     list-style-type: square;
+    @apply pl-4 md:pl-8;
     li {
       @apply mb-4 text-secondary text-[13px] lg:text-xl xl:text-3xl font-light;
       span {
