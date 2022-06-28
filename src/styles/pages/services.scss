@@ -97,4 +97,22 @@
       }
     }
   }
+  .custody {
+    @apply flex justify-between items-center md:items-stretch text-center max-w-7xl mx-auto mt-8 md:mt-20 mb-8 md:mb-32 flex-col md:flex-row;
+    li {
+      @apply max-w-[150px] md:max-w-[310px] flex flex-col px-1 mb-12 md:mb-0;
+      img {
+        @apply mx-auto h-24 lg:h-36 w-auto my-2 md:my-6;
+      }
+      p {
+        @apply text-secondary m-0;
+        &:nth-child(1) {
+          @apply flex-auto;
+        }
+        &.sub {
+          @apply text-[15px] md:text-xl text-secondary;
+        }
+      }
+    }
+  }
 }
