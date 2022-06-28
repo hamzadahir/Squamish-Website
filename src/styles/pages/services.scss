@@ -115,4 +115,30 @@
       }
     }
   }
+  .blockchain {
+    @apply relative w-full md:w-[41%];
+    li {
+      @apply border-b border-b-primary mb-3 md:mb-6;
+      h3 {
+        @apply mb-0 text-xl text-2xl xl:text-[40px] font-bold leading-tight;
+      }
+      p {
+        @apply mb-3 md:mb-6;
+      }
+    }
+  }
+  .harnessing {
+    @apply flex flex-col items-center py-10 md:py-20 relative;
+    li {
+      @apply inline-block text-[15px] md:text-3xl mb-4 md:mb-8 font-light cursor-pointer transition-all hover:text-secondary;
+      &.active {
+        .info {
+          @apply block;
+        }
+      }
+    }
+    .info {
+      @apply mt-3 mb-5 mx-auto lg:hidden lg:absolute right-0 lg:top-1/2 lg:-translate-y-1/2 rounded-[29px] bg-secondary p-5 text-xl text-white max-w-[242px];
+    }
+  }
 }

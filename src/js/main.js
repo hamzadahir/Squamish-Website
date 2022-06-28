@@ -33,6 +33,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
+
+  // BEGIN: Services page
+  const harnessingITem = document.getElementsByClassName('harnessing-item');
+
+  if (harnessingITem) {
+    for (let i = 0; i < harnessingITem.length; i++) {
+      harnessingITem[i].addEventListener('click', function () {
+        for (let k = 0; k < harnessingITem.length; k++) {
+          harnessingITem[k].classList.remove('active');
+        }
+        this.classList.add('active');
+      });
+    }
+  }
+  // END: Services page
+
   window.addEventListener('scroll', function () {
     // Home page
     scrollTrigger(trusted);

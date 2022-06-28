@@ -700,10 +700,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .block{
   display: block;
 }
@@ -748,28 +744,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3px;
 }
 
-.h-\[150px\]{
-  height: 150px;
-}
-
-.h-full{
-  height: 100%;
+.h-\[57px\]{
+  height: 57px;
 }
 
 .h-\[200\%\]{
   height: 200%;
-}
-
-.h-\[300\%\]{
-  height: 300%;
-}
-
-.h-\[117px\]{
-  height: 117px;
-}
-
-.h-\[57px\]{
-  height: 57px;
 }
 
 .min-h-\[228px\]{
@@ -786,6 +766,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-\[257px\]{
   min-height: 257px;
+}
+
+.min-h-\[242px\]{
+  min-height: 242px;
 }
 
 .w-full{
@@ -848,14 +832,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
-.w-\[150px\]{
-  width: 150px;
-}
-
-.w-\[117px\]{
-  width: 117px;
-}
-
 .w-\[57px\]{
   width: 57px;
 }
@@ -904,16 +880,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 56rem;
 }
 
-.max-w-xl{
-  max-width: 36rem;
-}
-
-.max-w-2xl{
-  max-width: 42rem;
-}
-
 .max-w-\[730px\]{
   max-width: 730px;
+}
+
+.max-w-\[650px\]{
+  max-width: 650px;
 }
 
 .flex-auto{
@@ -942,6 +914,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .translate-x-1\/4{
   --tw-translate-x: 25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1035,10 +1011,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-l-2{
   border-left-width: 2px;
-}
-
-.border-t-2{
-  border-top-width: 2px;
 }
 
 .border-t-4{
@@ -3306,6 +3278,125 @@ a{
   .services-page .custody li p.sub{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+.services-page .blockchain{
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .services-page .blockchain{
+    width: 41%;
+  }
+}
+
+.services-page .blockchain li{
+  margin-bottom: 0.75rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(31 65 129 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px){
+  .services-page .blockchain li{
+    margin-bottom: 1.5rem;
+  }
+}
+
+.services-page .blockchain li h3{
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@media (min-width: 1280px){
+  .services-page .blockchain li h3{
+    font-size: 40px;
+  }
+}
+
+.services-page .blockchain li p{
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px){
+  .services-page .blockchain li p{
+    margin-bottom: 1.5rem;
+  }
+}
+
+.services-page .harnessing{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px){
+  .services-page .harnessing{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.services-page .harnessing li{
+  margin-bottom: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 300;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.services-page .harnessing li:hover{
+  --tw-text-opacity: 1;
+  color: rgb(237 31 39 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .services-page .harnessing li{
+    margin-bottom: 2rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.services-page .harnessing li.active .info{
+  display: block;
+}
+
+.services-page .harnessing .info{
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+  max-width: 242px;
+  border-radius: 29px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 31 39 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .services-page .harnessing .info{
+    position: absolute;
+    top: 50%;
+    display: none;
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
