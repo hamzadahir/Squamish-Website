@@ -860,10 +860,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 280px;
 }
 
-.max-w-2xl{
-  max-width: 42rem;
-}
-
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -1484,7 +1480,7 @@ a{
 
   100% {
     opacity: 1;
-    max-width: 210px;
+    max-width: 280px;
   }
 }
 
@@ -1500,7 +1496,7 @@ a{
 
   100% {
     opacity: 1;
-    max-width: 210px;
+    max-width: 280px;
   }
 }
 
@@ -3085,6 +3081,80 @@ a{
   .services-page .tokenize-circle p{
     margin-left: 2.5rem;
   }
+}
+
+.services-page .networks{
+  position: relative;
+  margin-bottom: 5rem;
+  display: none;
+  height: 300px;
+}
+
+@media (min-width: 768px){
+  .services-page .networks{
+    display: block;
+  }
+}
+
+.services-page .networks span{
+  position: absolute;
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 31 39 / var(--tw-bg-opacity));
+}
+
+.services-page .networks span:nth-child(1){
+  left: 0px;
+  top: 50%;
+}
+
+.services-page .networks span:nth-child(2){
+  left: 5rem;
+  top: calc(50% + 40px);
+}
+
+.services-page .networks span:nth-child(3){
+  left: 5rem;
+  top: calc(50% - 40px);
+}
+
+.services-page .networks span:nth-child(4){
+  left: 10rem;
+  top: 50%;
+}
+
+.services-page .networks span:nth-child(5){
+  left: 10rem;
+  top: calc(50% + 80px);
+}
+
+.services-page .networks span:nth-child(6){
+  left: 10rem;
+  top: calc(50% - 80px);
+}
+
+.services-page .networks span:nth-child(7){
+  left: 15rem;
+  top: calc(50% + 40px);
+}
+
+.services-page .networks span:nth-child(8){
+  left: 15rem;
+  top: calc(50% - 40px);
+}
+
+.services-page .networks span:nth-child(9){
+  left: 15rem;
+  top: calc(50% + 120px);
+}
+
+.services-page .networks span:nth-child(10){
+  left: 15rem;
+  top: calc(50% - 120px);
 }
 
 .hover\:opacity-60:hover{

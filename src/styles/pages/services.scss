@@ -53,4 +53,48 @@
       @apply mt-4 md:mt-0 md:ml-4 2xl:ml-10 text-secondary mb-0;
     }
   }
+  .networks {
+    @apply hidden md:block relative h-[300px] mb-20;
+    span {
+      @apply inline-block absolute w-14 h-14 bg-secondary -translate-y-1/2;
+      &:nth-child(1) {
+        @apply left-0 top-1/2;
+      }
+      &:nth-child(2) {
+        @apply left-20;
+        top: calc(50% + 40px);
+      }
+      &:nth-child(3) {
+        @apply left-20;
+        top: calc(50% - 40px);
+      }
+      &:nth-child(4) {
+        @apply left-40 top-1/2;
+      }
+      &:nth-child(5) {
+        @apply left-40;
+        top: calc(50% + 80px);
+      }
+      &:nth-child(6) {
+        @apply left-40;
+        top: calc(50% - 80px);
+      }
+      &:nth-child(7) {
+        @apply left-60;
+        top: calc(50% + 40px);
+      }
+      &:nth-child(8) {
+        @apply left-60;
+        top: calc(50% - 40px);
+      }
+      &:nth-child(9) {
+        @apply left-60;
+        top: calc(50% + 120px);
+      }
+      &:nth-child(10) {
+        @apply left-60;
+        top: calc(50% - 120px);
+      }
+    }
+  }
 }
