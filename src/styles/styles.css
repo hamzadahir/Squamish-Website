@@ -700,6 +700,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -742,6 +746,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[3px\]{
   height: 3px;
+}
+
+.h-\[150px\]{
+  height: 150px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-\[200\%\]{
+  height: 200%;
+}
+
+.h-\[300\%\]{
+  height: 300%;
+}
+
+.h-\[117px\]{
+  height: 117px;
+}
+
+.h-\[57px\]{
+  height: 57px;
 }
 
 .min-h-\[228px\]{
@@ -820,6 +848,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
+.w-\[150px\]{
+  width: 150px;
+}
+
+.w-\[117px\]{
+  width: 117px;
+}
+
+.w-\[57px\]{
+  width: 57px;
+}
+
 .max-w-\[150px\]{
   max-width: 150px;
 }
@@ -862,6 +902,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.max-w-xl{
+  max-width: 36rem;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
+}
+
+.max-w-\[730px\]{
+  max-width: 730px;
 }
 
 .flex-auto{
@@ -965,6 +1017,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
+.rounded-\[50\%\]{
+  border-radius: 50%;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -979,6 +1035,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-l-2{
   border-left-width: 2px;
+}
+
+.border-t-2{
+  border-top-width: 2px;
+}
+
+.border-t-4{
+  border-top-width: 4px;
 }
 
 .border-b-primary{
@@ -999,6 +1063,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-l-secondary{
   --tw-border-opacity: 1;
   border-left-color: rgb(237 31 39 / var(--tw-border-opacity));
+}
+
+.border-t-secondary{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(237 31 39 / var(--tw-border-opacity));
 }
 
 .bg-white{
@@ -3410,6 +3479,10 @@ a{
     height: 11rem;
   }
 
+  .md\:h-\[117px\]{
+    height: 117px;
+  }
+
   .md\:w-44{
     width: 11rem;
   }
@@ -3472,6 +3545,14 @@ a{
 
   .md\:w-6\/12{
     width: 50%;
+  }
+
+  .md\:w-8\/12{
+    width: 66.666667%;
+  }
+
+  .md\:w-\[117px\]{
+    width: 117px;
   }
 
   .md\:min-w-\[350px\]{
