@@ -23,6 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // animations on scroll on Careers page
   const comeWork = document.getElementById('come-work');
 
+  // animations on scroll on Services page
+  const tokenizeCircle = document.getElementById('tokenize-circle');
+  const networks = document.getElementById('networks');
+  const custody = document.getElementById('custody');
+  const assetMarkets = document.getElementById('asset-markets');
+  const journey = document.getElementById('journey');
+
+
   const scrollTrigger = (selector) => {
     if (selector) {
       if (selector.offsetTop < (window.pageYOffset + window.innerHeight)) {
@@ -32,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   };
-
 
   // BEGIN: Services page
   const harnessingITem = document.getElementsByClassName('harnessing-item');
@@ -63,5 +70,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Careers page
     scrollTrigger(comeWork);
+
+    // Services page
+    scrollTrigger(tokenizeCircle);
+    scrollTrigger(networks);
+    scrollTrigger(custody);
+    scrollTrigger(assetMarkets);
+    scrollTrigger(journey);
   });
 });
