@@ -1,7 +1,7 @@
 .services-page {
   .services {
     a {
-      @apply flex justify-between items-center text-right text-3xl md:text-[40px] xl:text-[60px] md:leading-snug py-6 md:py-12 border-b border-b-primary transition-all;
+      @apply py-2 md:pt-5 md:pb-4 flex justify-between items-center text-right text-[50px] md:text-[60px] xl:text-[80px] border-b border-b-primary transition-all;
       &:hover {
         @apply text-secondary;
         span {
@@ -9,29 +9,29 @@
         }
       }
       span {
-        @apply ml-2 transition-all
+        @apply text-3xl md:text-[40px] xl:text-[60px] md:leading-snug ml-2 transition-all;
       }
     }
   }
   .label {
-    @apply mb-2 md:absolute md:-left-4 md:top-5 text-[15px] md:text-xl origin-top-left md:rotate-90;
+    @apply mb-2 md:absolute md:-left-4 2xl:-left-8 md:top-5 text-[15px] md:text-xl origin-top-left md:rotate-90;
   }
   .list {
     list-style-type: square;
     @apply pl-4 md:pl-0;
     li {
-      @apply mb-4 text-secondary text-[13px] lg:text-xl xl:text-3xl font-light;
+      @apply mb-5 text-secondary text-[13px] lg:text-xl xl:text-3xl font-light;
       span {
         @apply text-[13px] leading-snug lg:text-xl xl:text-3xl lg:leading-snug xl:leading-snug font-light text-primary;
       }
     }
   }
   .tokenize {
-    @apply flex items-start justify-between flex-wrap w-full md:w-9/12 ml-auto;
+    @apply mb-12 flex items-start justify-between flex-wrap w-full md:w-9/12 ml-auto;
     li {
-      @apply flex items-start md:items-center flex-col md:flex-row mb-10 md:mb-24 w-[48%] md:w-[44%];
+      @apply flex items-start md:items-center flex-col md:flex-row mb-10 md:mb-28 w-[48%] md:w-[45%];
       img {
-        @apply w-20 lg:w-32 md:mr-6 mb-6 md:mb-0;
+        @apply w-20 lg:w-36 md:mr-[12%] mb-6 md:mb-0;
       }
       p {
         @apply mb-0;
@@ -62,11 +62,11 @@
       }
     }
     p {
-      @apply opacity-0 -translate-x-full mt-4 md:mt-0 md:ml-6 2xl:ml-10 text-secondary mb-0 transition-all ease-in-out delay-200 duration-700;
+      @apply opacity-0 -translate-x-full mt-4 md:mt-0 md:ml-6 2xl:ml-24 text-secondary mb-0 transition-all ease-in-out delay-200 duration-700;
     }
   }
   .networks {
-    @apply hidden md:block relative h-[300px] mb-20;
+    @apply hidden md:block relative h-[300px] mb-28;
     &.animation {
       span {
         @apply opacity-100;
@@ -112,7 +112,7 @@
     }
   }
   .custody {
-    @apply flex justify-between items-center md:items-stretch text-center max-w-7xl mx-auto mt-8 md:mt-20 mb-8 md:mb-32 flex-col md:flex-row;
+    @apply flex justify-between items-center md:items-stretch text-center max-w-7xl mx-auto mt-8 md:mt-24 mb-8 md:mb-44 flex-col md:flex-row;
     &.animation {
       li {
         @apply translate-x-0 opacity-100;
@@ -127,7 +127,7 @@
         @apply -translate-x-[800px];
       }
       img {
-        @apply mx-auto h-24 lg:h-36 w-auto my-2 md:my-6;
+        @apply mx-auto h-24 lg:h-40 w-auto my-2 md:mt-6 md:mb-14;
       }
       p {
         @apply text-secondary m-0;
@@ -141,7 +141,7 @@
     }
   }
   .asset-markets {
-    @apply w-full md:w-8/12 flex items-center justify-between relative mt-8 md:mt-20;
+    @apply w-full md:w-7/12 flex items-center justify-between relative mt-8 md:mt-16;
     &.animation {
       .square {
         @apply rounded-none left-full -translate-x-full;
@@ -164,9 +164,15 @@
     @apply relative;
     &.mod {
       li {
-        @apply flex items-center justify-between mb-5 md:mb-10;
+        @apply flex items-center justify-between mb-0 md:mb-0;
+        &:not(:last-child) {
+          @apply mb-5 md:mb-12;
+        }
+        &:last-child {
+          @apply border-b-0;
+        }
         p {
-          @apply mb-5 md:mb-10;
+          @apply mb-5 md:mb-12;
         }
         img {
           @apply w-[50px] lg:w-[94px] max-h-[50px] lg:max-h-[90px] object-contain ml-[24%];
@@ -176,17 +182,17 @@
     li {
       @apply border-b border-b-primary mb-3 md:mb-6;
       h3 {
-        @apply mb-0 text-xl text-2xl xl:text-[40px] font-bold leading-tight;
+        @apply mb-0 text-xl text-2xl xl:text-[40px] font-bold leading-[1.325] mb-0.5;
       }
       p {
-        @apply mb-3 md:mb-6;
+        @apply mb-3 md:mb-8;
       }
     }
   }
   .harnessing {
-    @apply flex flex-col items-center py-10 md:py-20 relative;
+    @apply flex flex-col items-center mt-10 md:mt-16 relative;
     li {
-      @apply inline-block text-[15px] md:text-3xl mb-4 md:mb-8 font-light cursor-pointer transition-all hover:text-secondary;
+      @apply inline-block text-[15px] md:text-3xl mb-4 md:mb-9 font-light cursor-pointer transition-all hover:text-secondary;
       &.active {
         .info {
           @apply block;
