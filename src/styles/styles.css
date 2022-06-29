@@ -478,8 +478,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px){
@@ -592,6 +592,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -700,8 +705,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .block{
@@ -1128,6 +1145,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-12{
   padding-right: 3rem;
+}
+
+.pr-\[8\%\]{
+  padding-right: 8%;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-center{
@@ -2866,8 +2899,8 @@ a{
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-bottom-color: rgb(31 65 129 / var(--tw-border-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-align: right;
   font-size: 50px;
   transition-property: all;
@@ -2908,7 +2941,7 @@ a{
   transition-duration: 150ms;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .services-page .services a span{
     font-size: 40px;
     line-height: 1.375;
@@ -2922,7 +2955,7 @@ a{
 }
 
 .services-page .label{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   transform-origin: top left;
   font-size: 15px;
 }
@@ -2957,11 +2990,17 @@ a{
 }
 
 .services-page .list li{
-  margin-bottom: 1.25rem;
+  margin-bottom: 10px;
   font-size: 13px;
   font-weight: 300;
   --tw-text-opacity: 1;
   color: rgb(237 31 39 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .services-page .list li{
+    margin-bottom: 1.25rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -3003,7 +3042,6 @@ a{
 }
 
 .services-page .tokenize{
-  margin-bottom: 3rem;
   margin-left: auto;
   display: flex;
   width: 100%;
@@ -3014,6 +3052,7 @@ a{
 
 @media (min-width: 768px){
   .services-page .tokenize{
+    margin-bottom: 3rem;
     width: 75%;
   }
 }
@@ -3021,7 +3060,7 @@ a{
 .services-page .tokenize li{
   margin-bottom: 2.5rem;
   display: flex;
-  width: 48%;
+  width: 42%;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -3036,14 +3075,17 @@ a{
 }
 
 .services-page .tokenize li img{
-  margin-bottom: 1.5rem;
-  width: 5rem;
+  margin-bottom: 1rem;
+  max-height: 80px;
+  width: auto;
 }
 
 @media (min-width: 768px){
   .services-page .tokenize li img{
     margin-right: 12%;
     margin-bottom: 0px;
+    max-height: 100%;
+    width: 5rem;
   }
 }
 
@@ -3089,7 +3131,6 @@ a{
 }
 
 .services-page .tokenize-circle .circle-item{
-  margin-bottom: 2.5rem;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -3099,10 +3140,19 @@ a{
 
 @media (min-width: 768px){
   .services-page .tokenize-circle .circle-item{
-    margin-bottom: 0px;
     width: 48%;
     flex-direction: row;
     text-align: left;
+  }
+}
+
+.services-page .tokenize-circle .circle-item:not(:last-child){
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px){
+  .services-page .tokenize-circle .circle-item:not(:last-child){
+    margin-bottom: 0px;
   }
 }
 
@@ -3151,8 +3201,11 @@ a{
 }
 
 .services-page .tokenize-circle p{
-  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.75rem;
   margin-bottom: 0px;
+  max-width: 240px;
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-text-opacity: 1;
@@ -3168,6 +3221,7 @@ a{
   .services-page .tokenize-circle p{
     margin-top: 0px;
     margin-left: 1.5rem;
+    max-width: none;
   }
 }
 
@@ -3261,7 +3315,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0px;
   display: flex;
   max-width: 80rem;
   flex-direction: column;
@@ -3273,9 +3327,15 @@ a{
 @media (min-width: 768px){
   .services-page .custody{
     margin-top: 6rem;
-    margin-bottom: 11rem;
+    margin-bottom: 6rem;
     flex-direction: row;
     align-items: stretch;
+  }
+}
+
+@media (min-width: 1280px){
+  .services-page .custody{
+    margin-bottom: 11rem;
   }
 }
 
@@ -3291,9 +3351,9 @@ a{
 }
 
 .services-page .custody li{
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   display: flex;
-  max-width: 150px;
+  max-width: 170px;
   --tw-translate-x: 800px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
@@ -3364,7 +3424,7 @@ a{
 
 .services-page .asset-markets{
   position: relative;
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   width: 100%;
   align-items: center;
@@ -3390,8 +3450,8 @@ a{
 }
 
 .services-page .asset-markets .circle, .services-page .asset-markets .square{
-  height: 57px;
-  width: 57px;
+  height: 47px;
+  width: 47px;
   border-radius: 100px;
   --tw-bg-opacity: 1;
   background-color: rgb(237 31 39 / var(--tw-bg-opacity));
@@ -3447,7 +3507,7 @@ a{
 }
 
 .services-page .blockchain.mod li:not(:last-child){
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px){
@@ -3461,7 +3521,7 @@ a{
 }
 
 .services-page .blockchain.mod li p{
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px){
@@ -3486,7 +3546,7 @@ a{
 }
 
 .services-page .blockchain li{
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-bottom-color: rgb(31 65 129 / var(--tw-border-opacity));
@@ -3514,7 +3574,7 @@ a{
 }
 
 .services-page .blockchain li p{
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px){
@@ -3525,7 +3585,7 @@ a{
 
 .services-page .harnessing{
   position: relative;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3593,7 +3653,7 @@ a{
 }
 
 .services-page .journey{
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3857,20 +3917,24 @@ a{
     margin-bottom: 1rem;
   }
 
-  .md\:mb-32{
-    margin-bottom: 8rem;
+  .md\:mt-2{
+    margin-top: 0.5rem;
   }
 
   .md\:mb-24{
     margin-bottom: 6rem;
   }
 
-  .md\:mt-32{
-    margin-top: 8rem;
+  .md\:mb-8{
+    margin-bottom: 2rem;
   }
 
   .md\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .md\:mt-32{
+    margin-top: 8rem;
   }
 
   .md\:block{
@@ -4248,6 +4312,18 @@ a{
 
   .xl\:\!mt-3{
     margin-top: 0.75rem !important;
+  }
+
+  .xl\:mt-28{
+    margin-top: 7rem;
+  }
+
+  .xl\:mb-32{
+    margin-bottom: 8rem;
+  }
+
+  .xl\:mt-32{
+    margin-top: 8rem;
   }
 
   .xl\:min-w-\[810px\]{
