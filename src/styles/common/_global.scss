@@ -6,15 +6,19 @@
 
 h1 {
   // font-size: 120px
-  @apply mb-4 text-[60px] leading-none lg:text-[90px] xl:text-[120px] font-black;
+  @apply mb-4 md:mb-16 text-[60px] leading-none lg:text-[90px] xl:text-[120px] font-black;
 }
 
 p {
   // font-size: 16px
-  @apply mb-4 text-[15px] leading-snug md:text-base font-normal;
+  @apply mb-2 md:mb-4 text-[15px] leading-snug md:text-base font-normal;
 }
 
 a {
   // font-size: 16px
-  @apply text-[15px] leading-snug md:text-base font-normal;
+  @apply text-[15px] leading-snug md:text-base font-normal transition hover:opacity-60;
+}
+
+img {
+  @apply w-full;
 }

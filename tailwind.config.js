@@ -4,13 +4,14 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '2rem',
+        DEFAULT: '1rem',
         sm: '4rem',
       },
     },
     extend: {
       colors: {
         primary: '#1C1D1B',
+        secondary: '#F04E36',
       },
     },
   },
