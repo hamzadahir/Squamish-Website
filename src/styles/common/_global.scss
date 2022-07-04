@@ -1,114 +1,20 @@
 * {
   @apply text-primary;
-  font-family: Roboto, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-h1, h2 {
-  // font-size: 80px
-  line-height: 1.325 !important;
-  @apply mb-4 text-3xl lg:text-5xl xl:text-[80px] font-light;
-  span {
-    @apply font-bold;
-  }
-}
-
-h3 {
-  // font-size: 50px
-  @apply mb-4 text-3xl xl:text-[50px] leading-snug lg:leading-snug font-light;
-  span {
-    @apply font-bold;
-  }
-}
-
-h5 {
-  // font-size: 25px
-  @apply text-[15px] xl:text-[25px] font-bold;
-}
-
-h6 {
-  // font-size: 20px
-  @apply text-[15px] xl:text-xl font-bold;
+h1 {
+  // font-size: 120px
+  @apply mb-4 text-[60px] leading-none lg:text-[90px] xl:text-[120px] font-black;
 }
 
 p {
-  // font-size: 30px
-  @apply mb-4 text-[15px] leading-snug lg:text-xl xl:text-3xl lg:leading-snug xl:leading-snug font-light;
-  span {
-    @apply font-bold;
-  }
+  // font-size: 16px
+  @apply mb-4 text-[15px] leading-snug md:text-base font-normal;
 }
 
 a {
-  @apply font-light;
-}
-
-.square-small {
-  @apply flex items-center space-x-2;
-  div {
-    @apply w-4 lg:w-[22px] xl:w-[30px] h-4 lg:h-[22px] xl:h-[30px] bg-secondary;
-  }
-}
-
-.btn {
-  @apply relative inline-flex items-center uppercase;
-  &:hover {
-    div {
-      &:not(.text) {
-        @apply rotate-90;
-      }
-      &.text {
-        animation: 0.7s showText ease-in-out forwards;
-        @apply ml-2;
-      }
-    }
-  }
-  div {
-    &:not(.text) {
-      @apply w-4 lg:w-[22px] xl:w-[30px] h-4 lg:h-[22px] xl:h-[30px] bg-secondary transition-all duration-500;
-    }
-    &:nth-child(1) {
-      @apply hidden md:block;
-    }
-    &:not(:nth-child(1)) {
-      @apply ml-2;
-    }
-    &:nth-child(2) {
-      @apply ml-0 md:ml-2;
-    }
-    &.text {
-      @apply text-[15px] md:text-xl md:max-w-0 md:ml-0 md:opacity-0 text-secondary whitespace-nowrap;
-    }
-  }
-}
-
-.container {
-  max-width: 1764px !important;
-}
-
-.btn-second {
-  @apply text-[15px] md:text-3xl mb-0 text-secondary flex items-center cursor-pointer;
-  &:hover span:nth-child(1) {
-    @apply ml-4;
-  }
-  span {
-    @apply w-4 md:w-8 h-4 md:h-8 bg-secondary ml-2 transition-all;
-  }
-}
-
-@keyframes showText {
-  0% {
-    max-width: 0;
-    opacity:   0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity:   1;
-    max-width: 280px;
-  }
+  // font-size: 16px
+  @apply text-[15px] leading-snug md:text-base font-normal;
 }

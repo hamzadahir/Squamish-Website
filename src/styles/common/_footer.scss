@@ -1,15 +1,3 @@
 .footer {
-  .menu {
-    @apply mb-1 md:mb-0 flex items-center justify-start flex-col md:flex-row space-x-0 md:space-x-4 xl:space-x-28;
-    li {
-      @apply mb-0.5 md:mb-0;
-    }
-    a {
-      @apply text-[15px] lg:text-xl transition-all;
-      &:hover, &:active, &.active {
-        @apply text-secondary;
-      }
-    }
-  }
 
 }
