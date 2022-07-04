@@ -9,9 +9,29 @@ h1 {
   @apply mb-4 md:mb-16 text-[60px] leading-none lg:text-[90px] xl:text-[120px] font-black;
 }
 
+h2 {
+  // font-size: 100px
+  @apply mb-2 md:mb-4 leading-none text-[60px] md:text-[100px] font-black;
+}
+
 h3 {
+  // font-size: 60px
+  @apply leading-none text-[60px] font-black;
+}
+
+h4 {
   // font-size: 54px
-  @apply mb-4 md:mb-10 text-4xl leading-none md:text-[54px] font-black;
+  @apply mb-4 md:mb-10 text-4xl leading-none md:text-[44px] xl:text-[54px] font-black;
+}
+
+h5 {
+  // font-size: 30px
+  @apply mb-1 md:mb-2 text-2xl leading-none md:text-3xl font-bold;
+}
+
+h6 {
+  // font-size: 16px
+  @apply mb-1 md:mb-2 text-[13px] leading-none md:text-base font-black;
 }
 
 p {
