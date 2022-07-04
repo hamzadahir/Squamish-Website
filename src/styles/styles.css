@@ -609,8 +609,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mr-16 {
   margin-right: 4rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
@@ -623,6 +635,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .min-h-\[210px\] {
@@ -667,6 +683,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[48\%\] {
   width: 48%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .min-w-\[84px\] {
@@ -746,6 +770,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .bg-\[\#ece7e2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(236 231 226 / var(--tw-bg-opacity));
@@ -794,6 +822,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFDBD6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 219 214 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#D23929\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 57 41 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -877,6 +915,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-\[\#F9A156\] {
@@ -1164,6 +1207,104 @@ img {
   opacity: 0;
 }
 
+.home-page .financial .left {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .home-page .financial .left {
+    width: 42%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 10%;
+  }
+}
+
+.home-page .financial .left:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(253 190 99 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+}
+
+@media (min-width: 768px) {
+  .home-page .financial .left:before {
+    left: -200%;
+    width: 300%;
+  }
+}
+
+.home-page .financial .right {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .home-page .financial .right {
+    width: 58%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 10%;
+  }
+}
+
+.home-page .expenditures li {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.home-page .expenditures h6 {
+  width: 50%;
+  font-size: 15px;
+}
+
+.home-page .expenditures h6 img {
+  margin-left: 0.5rem;
+  display: inline-block;
+  width: 1rem;
+}
+
+.home-page .expenditures .lines {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.home-page .expenditures .lines .line-1, .home-page .expenditures .lines .line-2 {
+  padding: 0.5rem;
+  text-align: right;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 900;
+}
+
+.home-page .expenditures .lines .line-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 219 214 / var(--tw-bg-opacity));
+}
+
+.home-page .expenditures .lines .line-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 57 41 / var(--tw-bg-opacity));
+}
+
 .hover\:no-underline:hover {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -1194,8 +1335,16 @@ img {
     margin-bottom: 0px;
   }
 
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:ml-auto {
     margin-left: auto;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
 
   .md\:block {
