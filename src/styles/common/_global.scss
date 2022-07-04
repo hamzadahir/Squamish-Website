@@ -9,6 +9,11 @@ h1 {
   @apply mb-4 md:mb-16 text-[60px] leading-none lg:text-[90px] xl:text-[120px] font-black;
 }
 
+h3 {
+  // font-size: 54px
+  @apply mb-4 md:mb-10 text-4xl leading-none md:text-[54px] font-black;
+}
+
 p {
   // font-size: 16px
   @apply mb-2 md:mb-4 text-[15px] leading-snug md:text-base font-normal;
@@ -21,4 +26,8 @@ a {
 
 img {
   @apply w-full;
+}
+
+.container {
+  max-width: 1200px;
 }
