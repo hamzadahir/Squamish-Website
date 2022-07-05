@@ -35,6 +35,15 @@
         }
       }
     }
+    .panel-body {
+      .panel-item {
+        @apply hidden relative;
+        &.opened {
+          animation: visibleContent .3s linear forwards;
+          @apply block;
+        }
+      }
+    }
   }
   .financial {
     .left {
@@ -183,5 +192,14 @@
         @apply mb-0 text-sm;
       }
     }
+  }
+}
+
+@keyframes visibleContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
