@@ -1688,6 +1688,11 @@ img {
 @media (min-width: 768px) {
   .home-page .pillars .pillar-list li {
     width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-page .pillars .pillar-list li {
     padding: 2.5rem;
   }
 }
@@ -1702,7 +1707,7 @@ img {
   border-radius: 9999px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .home-page .pillars .pillar-list li img {
     margin-right: 2.5rem;
     width: 6rem;
@@ -1710,13 +1715,73 @@ img {
 }
 
 .home-page .pillars .pillar-list li h5 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+  .home-page .pillars .pillar-list li h5 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .home-page .pillars .pillar-list li p {
   margin-bottom: 0px;
   font-size: 15px;
+}
+
+.home-page .resources-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.home-page .resources-list li {
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(219 213 205 / var(--tw-border-opacity));
+  padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .home-page .resources-list li {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-page .resources-list li {
+    width: 31%;
+  }
+}
+
+.home-page .resources-list li img {
+  margin-left: 1rem;
+  width: 1.5rem;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.home-page .resources-list li img:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.home-page .resources-list li p {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .hover\:no-underline:hover {
