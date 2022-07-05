@@ -6,7 +6,7 @@
 
 h1 {
   // font-size: 120px
-  line-height: 0.8;
+  line-height: 0.9;
   @apply mb-4 md:mb-16 text-[60px] lg:text-[90px] xl:text-[120px] font-black;
 }
 
@@ -22,7 +22,8 @@ h3 {
 
 h4 {
   // font-size: 54px
-  @apply mb-4 md:mb-8 text-4xl leading-none md:text-[44px] xl:text-[54px] font-black;
+  line-height: 1.2 !important;
+  @apply mb-5 md:mb-8 text-4xl md:text-[44px] xl:text-[54px] font-black;
 }
 
 h5 {
@@ -32,13 +33,13 @@ h5 {
 
 h6 {
   // font-size: 16px
-  @apply mb-1 md:mb-2 text-[13px] leading-none md:text-base font-black;
+  @apply mb-3 md:mb-2 text-[13px] leading-none md:text-base font-black;
 }
 
 p {
   // font-size: 16px
   line-height: 1.7 !important;
-  @apply mb-4 md:mb-7 text-[15px] md:text-base font-normal;
+  @apply mb-7 md:mb-4 md:mb-7 text-[15px] md:text-base font-normal;
 }
 
 a {
