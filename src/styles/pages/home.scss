@@ -82,4 +82,57 @@
       }
     }
   }
+  .reviews {
+    @apply flex flex-wrap justify-between items-start;
+    &:before {
+      content: '';
+      @apply absolute left-4 md:left-1/2 top-[5%] h-[90%] border-r-2 border-r-[#d8d8d8] border-dotted;
+    }
+    .review-container {
+      @apply relative w-full md:w-1/2 -mt-24 mb-8 md:mb-32;
+      &:after {
+        content: '';
+        @apply absolute z-20 left-0 md:left-auto md:right-0 top-[70%] w-4 h-4 -translate-x-1/2 md:translate-x-1/2 -translate-y-1/2 bg-[#94795D] border-[5px] border-[#F9A156] rounded-full;
+      }
+      &:nth-child(2n) {
+        @apply mt-8 md:mt-32;
+        &:after {
+          @apply left-0 -translate-x-1/2;
+        }
+        .review-item {
+          @apply mx-auto mr-0 md:ml-auto;
+          &:before {
+            @apply left-2 -translate-x-full -rotate-90;
+          }
+        }
+      }
+      &:nth-child(3n) {
+        @apply mt-8 md:-mt-24;
+      }
+      .review-item {
+        @apply relative bg-white w-10/12 md:w-10/12 max-w-[476px] rounded-[5px] ml-auto md:ml-0 md:mr-auto;
+        &:before {
+          content:         '';
+          background:      url("../../../src/images/icons/triangle-white.svg") no-repeat center center;
+          background-size: contain;
+          @apply absolute z-20 left-2 md:left-auto md:right-2 top-[70%] w-8 h-8 -translate-x-full md:translate-x-full -translate-y-1/2 -rotate-90 md:rotate-90;
+        }
+        img {
+          @apply h-[304px] object-cover;
+        }
+        .info {
+          @apply p-8;
+          h6 {
+            @apply text-lg md:text-secondary font-bold;
+          }
+          h5 {
+            @apply text-[13px] md:text-2xl;
+          }
+          p {
+            @apply mb-0;
+          }
+        }
+      }
+    }
+  }
 }
