@@ -675,28 +675,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .mr-16 {
   margin-right: 4rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mb-28 {
-  margin-bottom: 7rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
 }
 
 .flex {
@@ -729,10 +713,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-\[780px\] {
   min-height: 780px;
-}
-
-.min-h-\[30px\] {
-  min-height: 30px;
 }
 
 .min-h-\[50px\] {
@@ -817,6 +797,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[680px\] {
   max-width: 680px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .-translate-y-1\/2 {
@@ -1310,7 +1298,6 @@ img {
   .header {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-right: 5rem;
   }
 }
 
@@ -1320,8 +1307,16 @@ img {
   padding-bottom: 1.5rem;
 }
 
-.header .container {
-  max-width: 1088px;
+@media screen and (max-width: 1366px) {
+  .annual {
+    padding-right: 78px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .annual {
+    padding-right: 0px;
+  }
 }
 
 /** Pages */
@@ -2239,6 +2234,10 @@ img {
 
   .md\:w-\[362px\] {
     width: 362px;
+  }
+
+  .md\:max-w-none {
+    max-width: none;
   }
 
   .md\:flex-row {
