@@ -20,7 +20,7 @@
   }
   .tabs {
     .tab-header {
-      @apply flex items-center space-x-4 mb-8;
+      @apply flex items-center space-x-6 mb-14;
       .tab-item {
         @apply relative text-[#CCBCAC] text-sm md:text-base font-bold cursor-pointer transition-all;
         &:hover, &:active, &.active {
@@ -31,7 +31,7 @@
         }
         &:before {
           content: '';
-          @apply opacity-0 absolute left-0 -bottom-1 w-full h-0.5 bg-secondary;
+          @apply opacity-0 absolute left-0 -bottom-2 w-full h-0.5 bg-secondary;
         }
       }
     }
@@ -47,22 +47,23 @@
   }
   .financial {
     .left {
-      @apply relative z-10 py-10 md:py-20 w-full md:w-[42%] px-8 md:pr-[10%];
+      @apply relative z-10 py-10 md:py-28 w-full md:w-[42%] md:pr-[8%];
       &:before {
         content: '';
         @apply absolute -z-10 left-0 md:-left-[200%] top-0 w-full md:w-[300%] h-full bg-[#fdbe63] bg-opacity-20;
       }
     }
     .right {
-      @apply relative z-20 bg-white py-10 md:py-20 w-full md:w-[58%] md:pl-[10%];
+      @apply relative z-20 bg-white py-10 md:py-28 w-full md:w-[58%] md:pl-[8.5%];
     }
   }
   .expenditures {
+    @apply mt-10;
     li {
-      @apply mb-6 flex items-center;
+      @apply mb-[29px] flex items-center;
     }
     h6 {
-      @apply w-1/2 text-[15px];
+      @apply w-[47%] text-[15px];
       img {
         @apply w-4 ml-2 inline-block;
       }
@@ -70,7 +71,7 @@
     .lines {
       @apply w-1/2 flex flex-col;
       .line-1, .line-2 {
-        @apply p-2 text-xs font-black text-right;
+        @apply p-[6px] text-xs font-black text-right;
       }
       .line-1 {
         @apply bg-[#FFDBD6];
@@ -98,13 +99,13 @@
       @apply absolute left-4 md:left-1/2 top-[5%] h-[90%] border-r-2 border-r-[#d8d8d8] border-dotted;
     }
     .review-container {
-      @apply relative w-full md:w-1/2 -mt-24 mb-8 md:mb-32;
+      @apply relative w-full md:w-1/2 -mt-20 md:mb-0;
       &:after {
         content: '';
         @apply absolute z-20 left-0 md:left-auto md:right-0 top-[70%] w-4 h-4 -translate-x-1/2 md:translate-x-1/2 -translate-y-1/2 bg-[#94795D] border-[5px] border-[#F9A156] rounded-full;
       }
       &:nth-child(2n) {
-        @apply mt-8 md:mt-32;
+        @apply mt-8 md:mt-72;
         &:after {
           @apply left-0 -translate-x-1/2;
         }
@@ -119,7 +120,7 @@
         @apply mt-8 md:-mt-24;
       }
       .review-item {
-        @apply relative bg-white w-10/12 md:w-10/12 max-w-[476px] rounded-[5px] ml-auto md:ml-0 md:mr-auto;
+        @apply relative bg-white w-10/12 md:w-10/12 max-w-[458px] rounded-[5px] ml-auto md:ml-0 md:mr-auto;
         &:before {
           content:         '';
           background:      url("../../../src/images/icons/triangle-white.svg") no-repeat center center;
@@ -127,7 +128,7 @@
           @apply absolute z-20 left-2 md:left-auto md:right-2 top-[70%] w-8 h-8 -translate-x-full md:translate-x-full -translate-y-1/2 -rotate-90 md:rotate-90;
         }
         .image {
-          @apply h-[304px];
+          @apply h-[284px];
           img {
             @apply h-full object-cover;
           }
@@ -165,12 +166,12 @@
       @apply absolute left-0 -top-[100px] md:-top-[300px] -z-10 w-full h-[100%] md:h-[120%] bg-[#dbd5cd];
     }
     .pillar-list {
-      @apply flex flex-wrap justify-between items-start;
+      @apply mt-12 flex flex-wrap justify-between items-start;
       li {
-        @apply flex items-start w-full md:w-[48%] p-4 lg:p-10 bg-white mb-8 rounded-[5px];
+        @apply flex items-start w-full md:w-[48%] p-4 lg:px-10 lg:py-14 bg-white mb-8 rounded-[5px];
         box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
         img {
-          @apply w-16 lg:w-24 rounded-full mr-4 lg:mr-10;
+          @apply w-16 lg:w-28 rounded-full mr-4 lg:mr-10;
         }
         h5 {
           @apply text-lg lg:text-2xl;
@@ -182,7 +183,7 @@
     }
   }
   .resources-list {
-    @apply flex flex-wrap justify-between items-start;
+    @apply mt-20 flex flex-wrap justify-between items-start;
     li {
       @apply flex items-center justify-between w-full sm:w-[48%] lg:w-[31%] p-6 mb-8 rounded-[5px] border-2 border-[#dbd5cd];
       img {

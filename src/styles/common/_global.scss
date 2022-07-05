@@ -6,7 +6,8 @@
 
 h1 {
   // font-size: 120px
-  @apply mb-4 md:mb-16 text-[60px] leading-none lg:text-[90px] xl:text-[120px] font-black;
+  line-height: 0.8;
+  @apply mb-4 md:mb-16 text-[60px] lg:text-[90px] xl:text-[120px] font-black;
 }
 
 h2 {
@@ -21,7 +22,7 @@ h3 {
 
 h4 {
   // font-size: 54px
-  @apply mb-4 md:mb-10 text-4xl leading-none md:text-[44px] xl:text-[54px] font-black;
+  @apply mb-4 md:mb-8 text-4xl leading-none md:text-[44px] xl:text-[54px] font-black;
 }
 
 h5 {
@@ -36,7 +37,8 @@ h6 {
 
 p {
   // font-size: 16px
-  @apply mb-4 md:mb-8 text-[15px] leading-snug md:text-base font-normal;
+  line-height: 1.7 !important;
+  @apply mb-4 md:mb-7 text-[15px] md:text-base font-normal;
 }
 
 a {
@@ -49,5 +51,5 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
 }

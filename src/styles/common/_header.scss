@@ -3,4 +3,7 @@
   &.active {
     @apply py-6 z-[60];
   }
+  .container {
+    @apply max-w-[1088px];
+  }
 }

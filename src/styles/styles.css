@@ -606,28 +606,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
-.mb-28 {
-  margin-bottom: 7rem;
+.mb-36 {
+  margin-bottom: 9rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mt-6 {
   margin-top: 1.5rem;
 }
 
-.-mt-16 {
-  margin-top: -4rem;
+.-mt-28 {
+  margin-top: -7rem;
 }
 
 .-mb-32 {
   margin-bottom: -8rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-2 {
@@ -646,8 +650,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mb-10 {
@@ -660,6 +668,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-16 {
   margin-right: 4rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mb-60 {
+  margin-bottom: 15rem;
 }
 
 .flex {
@@ -714,8 +730,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[17\%\] {
@@ -744,6 +760,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-w-\[84px\] {
   min-width: 84px;
+}
+
+.min-w-\[300px\] {
+  min-width: 300px;
 }
 
 .max-w-sm {
@@ -935,9 +955,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0px;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-2 {
@@ -950,14 +975,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .pt-32 {
@@ -970,6 +990,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
 }
 
 .text-left {
@@ -1005,6 +1033,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .text-\[\#F9A156\] {
@@ -1066,10 +1098,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 h1 {
+  line-height: 0.8;
   margin-bottom: 1rem;
   font-size: 60px;
   font-weight: 900;
-  line-height: 1;
 }
 
 @media (min-width: 768px) {
@@ -1126,7 +1158,7 @@ h4 {
 
 @media (min-width: 768px) {
   h4 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     font-size: 44px;
   }
 }
@@ -1169,15 +1201,15 @@ h6 {
 }
 
 p {
+  line-height: 1.7 !important;
   margin-bottom: 1rem;
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.375;
 }
 
 @media (min-width: 768px) {
   p {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -1210,7 +1242,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
 }
 
 /** Layouts */
@@ -1242,6 +1274,10 @@ img {
   z-index: 60;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.header .container {
+  max-width: 1088px;
 }
 
 /** Pages */
@@ -1294,15 +1330,15 @@ img {
 }
 
 .home-page .tabs .tab-header {
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
   display: flex;
   align-items: center;
 }
 
 .home-page .tabs .tab-header > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .home-page .tabs .tab-header .tab-item {
@@ -1338,7 +1374,7 @@ img {
   content: '';
   position: absolute;
   left: 0px;
-  bottom: -0.25rem;
+  bottom: -0.5rem;
   height: 0.125rem;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -1363,16 +1399,14 @@ img {
   width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 @media (min-width: 768px) {
   .home-page .financial .left {
     width: 42%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-right: 10%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-right: 8%;
   }
 }
 
@@ -1408,20 +1442,24 @@ img {
 @media (min-width: 768px) {
   .home-page .financial .right {
     width: 58%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 10%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 8.5%;
   }
 }
 
+.home-page .expenditures {
+  margin-top: 2.5rem;
+}
+
 .home-page .expenditures li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 29px;
   display: flex;
   align-items: center;
 }
 
 .home-page .expenditures h6 {
-  width: 50%;
+  width: 47%;
   font-size: 15px;
 }
 
@@ -1438,7 +1476,7 @@ img {
 }
 
 .home-page .expenditures .lines .line-1, .home-page .expenditures .lines .line-2 {
-  padding: 0.5rem;
+  padding: 6px;
   text-align: right;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1500,14 +1538,13 @@ img {
 
 .home-page .reviews .review-container {
   position: relative;
-  margin-top: -6rem;
-  margin-bottom: 2rem;
+  margin-top: -5rem;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .home-page .reviews .review-container {
-    margin-bottom: 8rem;
+    margin-bottom: 0px;
     width: 50%;
   }
 }
@@ -1546,7 +1583,7 @@ img {
 
 @media (min-width: 768px) {
   .home-page .reviews .review-container:nth-child(2n) {
-    margin-top: 8rem;
+    margin-top: 18rem;
   }
 }
 
@@ -1589,7 +1626,7 @@ img {
   position: relative;
   margin-left: auto;
   width: 83.333333%;
-  max-width: 476px;
+  max-width: 458px;
   border-radius: 5px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1630,7 +1667,7 @@ img {
 }
 
 .home-page .reviews .review-container .review-item .image {
-  height: 304px;
+  height: 284px;
 }
 
 .home-page .reviews .review-container .review-item .image img {
@@ -1726,6 +1763,7 @@ img {
 }
 
 .home-page .pillars .pillar-list {
+  margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1751,7 +1789,10 @@ img {
 
 @media (min-width: 1024px) {
   .home-page .pillars .pillar-list li {
-    padding: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
 
@@ -1768,7 +1809,7 @@ img {
 @media (min-width: 1024px) {
   .home-page .pillars .pillar-list li img {
     margin-right: 2.5rem;
-    width: 6rem;
+    width: 7rem;
   }
 }
 
@@ -1790,6 +1831,7 @@ img {
 }
 
 .home-page .resources-list {
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1868,13 +1910,23 @@ img {
 }
 
 @media (min-width: 768px) {
+  .md\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .md\:my-28 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
   .md\:my-32 {
     margin-top: 8rem;
     margin-bottom: 8rem;
   }
 
-  .md\:mt-24 {
-    margin-top: 6rem;
+  .md\:mt-28 {
+    margin-top: 7rem;
   }
 
   .md\:mt-0 {
@@ -1901,20 +1953,24 @@ img {
     margin-bottom: 3rem;
   }
 
-  .md\:mt-16 {
-    margin-top: 4rem;
+  .md\:mt-24 {
+    margin-top: 6rem;
   }
 
   .md\:ml-auto {
     margin-left: auto;
   }
 
-  .md\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
   .md\:mb-40 {
     margin-bottom: 10rem;
+  }
+
+  .md\:mb-60 {
+    margin-bottom: 15rem;
+  }
+
+  .md\:mb-64 {
+    margin-bottom: 16rem;
   }
 
   .md\:block {
@@ -1925,8 +1981,8 @@ img {
     display: inline-block;
   }
 
-  .md\:h-1\/2 {
-    height: 50%;
+  .md\:h-\[48\%\] {
+    height: 48%;
   }
 
   .md\:min-h-\[320px\] {
@@ -1937,52 +1993,72 @@ img {
     min-height: 427px;
   }
 
-  .md\:w-\[362px\] {
-    width: 362px;
+  .md\:w-\[560px\] {
+    width: 560px;
   }
 
   .md\:w-full {
     width: 100%;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
+  .md\:w-\[46\%\] {
+    width: 46%;
   }
 
-  .md\:w-\[28\%\] {
-    width: 28%;
+  .md\:w-\[51\%\] {
+    width: 51%;
   }
 
-  .md\:w-\[60\%\] {
-    width: 60%;
+  .md\:w-\[31\%\] {
+    width: 31%;
   }
 
-  .md\:w-\[38\%\] {
-    width: 38%;
+  .md\:w-\[61\%\] {
+    width: 61%;
   }
 
-  .md\:w-\[24\%\] {
-    width: 24%;
+  .md\:w-\[30\%\] {
+    width: 30%;
   }
 
-  .md\:w-\[48\%\] {
-    width: 48%;
+  .md\:w-\[66\%\] {
+    width: 66%;
+  }
+
+  .md\:w-\[26\%\] {
+    width: 26%;
+  }
+
+  .md\:w-\[44\%\] {
+    width: 44%;
   }
 
   .md\:w-\[49\%\] {
     width: 49%;
   }
 
-  .md\:w-4\/12 {
-    width: 33.333333%;
+  .md\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .md\:w-7\/12 {
     width: 58.333333%;
   }
 
+  .md\:w-\[64\%\] {
+    width: 64%;
+  }
+
   .md\:w-\[110\%\] {
     width: 110%;
+  }
+
+  .md\:w-\[48\%\] {
+    width: 48%;
+  }
+
+  .md\:w-\[362px\] {
+    width: 362px;
   }
 
   .md\:flex-row {
@@ -1993,14 +2069,14 @@ img {
     align-items: center;
   }
 
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:py-16 {
@@ -2008,8 +2084,8 @@ img {
     padding-bottom: 4rem;
   }
 
-  .md\:pt-44 {
-    padding-top: 11rem;
+  .md\:pt-36 {
+    padding-top: 9rem;
   }
 
   .md\:pb-32 {
@@ -2020,16 +2096,20 @@ img {
     padding-left: 0px;
   }
 
-  .md\:pt-\[2\%\] {
-    padding-top: 2%;
+  .md\:pt-\[3\%\] {
+    padding-top: 3%;
   }
 
-  .md\:pr-\[20\%\] {
-    padding-right: 20%;
+  .md\:pr-\[30\%\] {
+    padding-right: 30%;
   }
 
-  .md\:pt-60 {
-    padding-top: 15rem;
+  .md\:pt-56 {
+    padding-top: 14rem;
+  }
+
+  .md\:pr-\[6\%\] {
+    padding-right: 6%;
   }
 
   .md\:text-\[15px\] {
