@@ -18,17 +18,22 @@
       }
     }
   }
-  .tab-item {
-    @apply relative text-[#CCBCAC] text-sm md:text-base font-bold cursor-pointer transition-all;
-    &:hover, &:active, &.active {
-      @apply text-secondary;
-      &:before {
-        @apply opacity-100;
+  .tabs {
+    .tab-header {
+      @apply flex items-center space-x-4 mb-8;
+      .tab-item {
+        @apply relative text-[#CCBCAC] text-sm md:text-base font-bold cursor-pointer transition-all;
+        &:hover, &:active, &.active {
+          @apply text-secondary;
+          &:before {
+            @apply opacity-100;
+          }
+        }
+        &:before {
+          content: '';
+          @apply opacity-0 absolute left-0 -bottom-1 w-full h-0.5 bg-secondary;
+        }
       }
-    }
-    &:before {
-      content: '';
-      @apply opacity-0 absolute left-0 -bottom-1 w-full h-0.5 bg-secondary;
     }
   }
   .financial {
@@ -63,6 +68,17 @@
       }
       .line-2 {
         @apply bg-[#D23929];
+      }
+    }
+  }
+  .list-checkmark {
+    li {
+      @apply relative pl-8 mb-1;
+      &:before {
+        content:         '';
+        background:      url("../../../src/images/icons/checkmark.svg") no-repeat center center;
+        background-size: contain;
+        @apply absolute z-20 left-0 top-1 w-4 h-4;
       }
     }
   }
