@@ -117,8 +117,11 @@
           background-size: contain;
           @apply absolute z-20 left-2 md:left-auto md:right-2 top-[70%] w-8 h-8 -translate-x-full md:translate-x-full -translate-y-1/2 -rotate-90 md:rotate-90;
         }
-        img {
-          @apply h-[304px] object-cover;
+        .image {
+          @apply h-[304px];
+          img {
+            @apply h-full object-cover;
+          }
         }
         .info {
           @apply p-8;
@@ -133,6 +136,18 @@
           }
         }
       }
+    }
+  }
+  .play {
+    @apply relative cursor-pointer;
+    &:before {
+      content:         '';
+      background:      url("../../../src/images/icons/play.svg") no-repeat center center;
+      background-size: contain;
+      @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 md:w-20 h-12 md:h-20 transition-all;
+    }
+    &:hover:before {
+      @apply scale-110;
     }
   }
 }

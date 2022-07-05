@@ -646,6 +646,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mr-16 {
   margin-right: 4rem;
 }
@@ -722,10 +726,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2rem;
 }
 
-.w-\[110\%\] {
-  width: 110%;
-}
-
 .w-\[1600px\] {
   width: 1600px;
 }
@@ -784,6 +784,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1149,7 +1153,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.375;
@@ -1157,7 +1161,7 @@ p {
 
 @media (min-width: 768px) {
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -1567,8 +1571,12 @@ img {
   }
 }
 
-.home-page .reviews .review-container .review-item img {
+.home-page .reviews .review-container .review-item .image {
   height: 304px;
+}
+
+.home-page .reviews .review-container .review-item .image img {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1603,6 +1611,41 @@ img {
 
 .home-page .reviews .review-container .review-item .info p {
   margin-bottom: 0px;
+}
+
+.home-page .play {
+  position: relative;
+  cursor: pointer;
+}
+
+.home-page .play:before {
+  content: '';
+  background: url("../../../src/images/icons/play.svg") no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 3rem;
+  width: 3rem;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (min-width: 768px) {
+  .home-page .play:before {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+.home-page .play:hover:before {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:no-underline:hover {
@@ -1650,6 +1693,10 @@ img {
 
   .md\:ml-auto {
     margin-left: auto;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .md\:block {
