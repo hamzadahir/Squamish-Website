@@ -1,0 +1,21 @@
+.strategic-page {
+  .navigation {
+    @apply flex items-center justify-between space-x-4 min-w-[800px];
+    &-wrapper {
+      @apply overflow-auto;
+      /* Hide scrollbar for IE, Edge and Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width:    none; /* Firefox */
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    a {
+      @apply text-white transition hover:text-[#f9a156];
+      &.active {
+        @apply text-[#f9a156];
+      }
+    }
+  }
+}
