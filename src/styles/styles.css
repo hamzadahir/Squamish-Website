@@ -688,8 +688,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 4rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .flex {
@@ -778,10 +778,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[110\%\] {
   width: 110%;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
 }
 
 .min-w-\[84px\] {
@@ -1028,6 +1024,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pt-28 {
@@ -2103,6 +2104,67 @@ img {
   color: rgb(249 161 86 / var(--tw-text-opacity));
 }
 
+.strategic-page .values {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 780px;
+}
+
+.strategic-page .values .value-item {
+  position: relative;
+}
+
+.strategic-page .values .value-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .strategic-page .values .value-item:not(:last-child) {
+    margin-bottom: 3rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.strategic-page .values .value-item:not(:last-child):before {
+  content: '';
+  background: url("../../../src/images/icons/dots.svg") no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  height: 2.5rem;
+  width: 3px;
+}
+
+@media (min-width: 768px) {
+  .strategic-page .values .value-item:not(:last-child):before {
+    height: 5rem;
+  }
+}
+
+.strategic-page .values .value-item h6 {
+  --tw-text-opacity: 1;
+  color: rgb(249 161 86 / var(--tw-text-opacity));
+}
+
+.strategic-page .values .value-item h2 {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media screen and (max-width: 567px) {
+  .strategic-page .values .value-item h2 {
+    font-size: 40px;
+  }
+}
+
+.strategic-page .values .value-item p {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:no-underline:hover {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -2364,6 +2426,11 @@ img {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .md\:pt-36 {
