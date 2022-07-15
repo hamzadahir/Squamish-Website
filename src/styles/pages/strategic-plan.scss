@@ -20,6 +20,19 @@
   }
   .values {
     @apply relative max-w-[780px] mx-auto;
+    &.white {
+      .value-item {
+        h6 {
+          @apply text-primary;
+        }
+        h2 {
+          @apply text-[#F9A156] xl:text-[75px];
+        }
+        p {
+          @apply text-primary;
+        }
+      }
+    }
     .value-item {
       @apply relative;
       &:not(:last-child) {

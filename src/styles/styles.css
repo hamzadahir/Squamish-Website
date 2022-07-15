@@ -820,6 +820,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 680px;
 }
 
+.max-w-\[880px\] {
+  max-width: 880px;
+}
+
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1298,6 +1302,10 @@ a:hover {
 
 img {
   width: 100%;
+}
+
+main {
+  overflow: hidden;
 }
 
 .container {
@@ -2109,6 +2117,27 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 780px;
+}
+
+.strategic-page .values.white .value-item h6 {
+  --tw-text-opacity: 1;
+  color: rgb(28 29 27 / var(--tw-text-opacity));
+}
+
+.strategic-page .values.white .value-item h2 {
+  --tw-text-opacity: 1;
+  color: rgb(249 161 86 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+  .strategic-page .values.white .value-item h2 {
+    font-size: 75px;
+  }
+}
+
+.strategic-page .values.white .value-item p {
+  --tw-text-opacity: 1;
+  color: rgb(28 29 27 / var(--tw-text-opacity));
 }
 
 .strategic-page .values .value-item {

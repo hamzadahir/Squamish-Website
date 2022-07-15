@@ -51,6 +51,10 @@ img {
   @apply w-full;
 }
 
+main {
+  @apply overflow-hidden;
+}
+
 .container {
   max-width: 1170px;
 }
