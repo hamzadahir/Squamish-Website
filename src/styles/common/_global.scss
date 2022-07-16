@@ -58,3 +58,54 @@ main {
 .container {
   max-width: 1170px;
 }
+
+.tabs {
+  .tabs-inner {
+    @apply overflow-auto;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width:    none; /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .tab-header {
+    @apply flex items-center space-x-6 mb-10 md:mb-14 overflow-auto;
+    .tab-item {
+      @apply mb-2 relative whitespace-nowrap text-[#CCBCAC] text-sm md:text-base font-bold cursor-pointer transition-all;
+      &:hover, &:active, &.active {
+        @apply text-secondary;
+        &:before {
+          @apply opacity-100;
+        }
+      }
+      &:before {
+        content: '';
+        @apply opacity-0 absolute left-0 -bottom-2 w-full h-0.5 bg-secondary;
+      }
+    }
+  }
+  .panel-body {
+    .panel-item {
+      @apply hidden relative;
+      &.opened {
+        animation: visibleContent .3s linear forwards;
+        @apply block;
+      }
+    }
+  }
+}
+
+.resources-list {
+  @apply mt-10 md:mt-20 flex flex-wrap items-start;
+  li {
+    @apply flex items-center justify-between w-full sm:w-[48%] lg:w-[31%] px-6 py-7 mb-5 md:mb-8 rounded-[5px] border-2 border-[#dbd5cd];
+    img {
+      @apply w-6  ml-4 cursor-pointer transition-all hover:scale-110;
+    }
+    p {
+      @apply mb-0 text-sm;
+    }
+  }
+}

@@ -26,4 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
       this.classList.add('active');
     });
   }
+
+  // accordion
+  const accordionTitle = document.getElementsByClassName('accordion-title');
+  for (let i = 0; i < accordionTitle.length; i++) {
+    accordionTitle[i].addEventListener('click', function () {
+      const parent = this.closest('.accordion-item');
+      parent.classList.toggle('opened');
+    });
+  }
 });
