@@ -560,6 +560,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -25%;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.top-\[4\.5rem\] {
+  top: 4.5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -802,6 +846,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-w-\[458px\] {
   min-width: 458px;
+}
+
+.min-w-\[780px\] {
+  min-width: 780px;
+}
+
+.min-w-\[580px\] {
+  min-width: 580px;
 }
 
 .max-w-sm {
@@ -2382,6 +2434,10 @@ main {
 @media (min-width: 768px) {
   .md\:top-\[20\%\] {
     top: 20%;
+  }
+
+  .md\:top-32 {
+    top: 8rem;
   }
 
   .md\:my-24 {
