@@ -98,7 +98,7 @@ main {
 }
 
 .resources-list {
-  @apply mt-10 md:mt-20 flex flex-wrap items-start;
+  @apply mt-10 md:mt-20 flex flex-wrap;
   li {
     @apply flex items-center justify-between w-full sm:w-[48%] lg:w-[31%] px-6 py-7 mb-5 md:mb-8 rounded-[5px] border-2 border-[#dbd5cd];
     img {
