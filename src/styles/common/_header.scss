@@ -1,5 +1,5 @@
 .header {
-  @apply fixed z-30 left-0 top-0 w-full py-5 md:py-12 transition-all;
+  @apply fixed z-30 left-0 top-0 w-full py-5 md:py-8 transition-all;
   &.active {
     @apply py-6 z-[60];
   }
