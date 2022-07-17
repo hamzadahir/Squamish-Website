@@ -60,7 +60,7 @@
       @apply relative pl-8 mb-1;
       &:before {
         content:         '';
-        background:      url("../../../src/images/icons/checkmark.svg") no-repeat center center;
+        background:      url("../images/icons/checkmark.svg") no-repeat center center;
         background-size: contain;
         @apply absolute z-20 left-0 top-1 w-4 h-4;
       }
@@ -97,7 +97,7 @@
         @apply relative bg-white w-10/12 md:w-10/12 max-w-[458px] rounded-[5px] ml-auto md:ml-0 md:mr-auto;
         &:before {
           content:         '';
-          background:      url("../../../src/images/icons/triangle-white.svg") no-repeat center center;
+          background:      url("../images/icons/triangle-white.svg") no-repeat center center;
           background-size: contain;
           @apply absolute z-20 left-2 md:left-auto md:right-2 top-[70%] w-8 h-8 -translate-x-full md:translate-x-full -translate-y-1/2 -rotate-90 md:rotate-90;
         }
@@ -126,7 +126,7 @@
     @apply relative cursor-pointer;
     &:before {
       content:         '';
-      background:      url("../../../src/images/icons/play.svg") no-repeat center center;
+      background:      url("../images/icons/play.svg") no-repeat center center;
       background-size: contain;
       @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 md:w-20 h-12 md:h-20 transition-all;
     }

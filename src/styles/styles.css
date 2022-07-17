@@ -1713,7 +1713,7 @@ main {
 
 .home-page .list-checkmark li:before {
   content: '';
-  background: url("../../../src/images/icons/checkmark.svg") no-repeat center center;
+  background: url("../images/icons/checkmark.svg") no-repeat center center;
   background-size: contain;
   position: absolute;
   left: 0px;
@@ -1854,7 +1854,7 @@ main {
 
 .home-page .reviews .review-container .review-item:before {
   content: '';
-  background: url("../../../src/images/icons/triangle-white.svg") no-repeat center center;
+  background: url("../images/icons/triangle-white.svg") no-repeat center center;
   background-size: contain;
   position: absolute;
   left: 0.5rem;
@@ -1947,7 +1947,7 @@ main {
 
 .home-page .play:before {
   content: '';
-  background: url("../../../src/images/icons/play.svg") no-repeat center center;
+  background: url("../images/icons/play.svg") no-repeat center center;
   background-size: contain;
   position: absolute;
   left: 50%;
@@ -2206,7 +2206,7 @@ main {
 
 .strategic-page .values .value-item:not(:last-child):before {
   content: '';
-  background: url("../../../src/images/icons/dots.svg") no-repeat center center;
+  background: url("../images/icons/dots.svg") no-repeat center center;
   background-size: contain;
   position: absolute;
   left: 50%;
@@ -2336,7 +2336,7 @@ main {
 }
 
 .strategic-page .accordion .accordion-title:before {
-  background: url("../../../src/images/icons/arrow.svg") no-repeat center center;
+  background: url("../images/icons/arrow.svg") no-repeat center center;
   background-size: contain;
 }
 
