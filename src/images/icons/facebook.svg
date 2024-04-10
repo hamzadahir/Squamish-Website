@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="35px" viewBox="0 0 20 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="homepage" transform="translate(-1279.000000, -11651.000000)" stroke="#FFFFFF" stroke-width="2.5">
+            <g id="footer" transform="translate(-161.000000, 11508.000000)">
+                <g id="socials" transform="translate(1382.000000, 145.000000)">
+                    <g id="streamlinehq-social-media-facebook-logos-48" transform="translate(60.000000, 0.000000)">
+                        <path d="M16.6341463,9.65393159 L10.8542554,9.65393159 L10.8542554,7.02354509 C10.8157869,6.635088 10.9415632,6.24831268 11.2002973,5.95942931 C11.4590314,5.67054593 11.8264062,5.50670535 12.2110373,5.50866282 L16.281383,5.50866282 L16.281383,0 L10.4065173,0 C5.07436438,0 4.07034576,4.13149711 4.07034576,6.69302532 L4.07034576,9.65393159 L0,9.65393159 L0,15.1625944 L4.07034576,15.1625944 L4.07034576,31 L10.8542554,31 L10.8542554,15.1625944 L16.0778658,15.1625944 L16.6341463,9.65393159 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

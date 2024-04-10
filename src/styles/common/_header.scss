@@ -1,0 +1,18 @@
+.header {
+  @apply fixed z-30 left-0 top-0 w-full py-5 md:py-8 transition-all;
+  &.active {
+    @apply py-6 z-[60];
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .annual {
+    @apply pr-[78px];
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .annual {
+    @apply pr-0;
+  }
+}

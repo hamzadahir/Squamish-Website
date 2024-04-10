@@ -1,0 +1,111 @@
+* {
+  @apply text-primary;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+h1 {
+  // font-size: 120px
+  line-height: 0.9;
+  @apply mb-4 md:mb-16 text-[60px] lg:text-[90px] xl:text-[120px] font-black;
+}
+
+h2 {
+  // font-size: 100px
+  @apply mb-2 md:mb-4 leading-none text-[60px] md:text-[80px] xl:text-[100px] font-black;
+}
+
+h3 {
+  // font-size: 60px
+  @apply leading-none text-[60px] font-black;
+}
+
+h4 {
+  // font-size: 54px
+  line-height: 1.2 !important;
+  @apply mb-5 md:mb-8 text-4xl md:text-[44px] xl:text-[54px] font-black;
+}
+
+h5 {
+  // font-size: 30px
+  @apply mb-1 md:mb-2 text-2xl leading-none md:text-3xl font-bold;
+}
+
+h6 {
+  // font-size: 16px
+  @apply mb-3 md:mb-2 text-[13px] leading-none md:text-base font-black;
+}
+
+p {
+  // font-size: 16px
+  line-height: 1.7 !important;
+  @apply mb-7 md:mb-4 md:mb-7 text-[15px] md:text-base font-normal;
+}
+
+a {
+  // font-size: 16px
+  @apply text-[15px] leading-snug md:text-base font-normal transition hover:opacity-60;
+}
+
+img {
+  @apply w-full;
+}
+
+main {
+  @apply overflow-hidden;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.tabs {
+  .tabs-inner {
+    @apply overflow-auto;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width:    none; /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .tab-header {
+    @apply flex items-center space-x-6 mb-10 md:mb-14 overflow-auto;
+    .tab-item {
+      @apply mb-2 relative whitespace-nowrap text-[#CCBCAC] text-sm md:text-base font-bold cursor-pointer transition-all;
+      &:hover, &:active, &.active {
+        @apply text-secondary;
+        &:before {
+          @apply opacity-100;
+        }
+      }
+      &:before {
+        content: '';
+        @apply opacity-0 absolute left-0 -bottom-2 w-full h-0.5 bg-secondary;
+      }
+    }
+  }
+  .panel-body {
+    .panel-item {
+      @apply hidden relative;
+      &.opened {
+        animation: visibleContent .3s linear forwards;
+        @apply block;
+      }
+    }
+  }
+}
+
+.resources-list {
+  @apply mt-10 md:mt-20 flex flex-wrap;
+  li {
+    @apply flex items-center justify-between w-full sm:w-[48%] lg:w-[31%] px-6 py-7 mb-5 md:mb-8 rounded-[5px] border-2 border-[#dbd5cd];
+    img {
+      @apply w-6  ml-4 cursor-pointer transition-all hover:scale-110;
+    }
+    p {
+      @apply mb-0 text-sm;
+    }
+  }
+}

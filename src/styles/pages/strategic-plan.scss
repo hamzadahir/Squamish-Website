@@ -1,0 +1,116 @@
+.strategic-page {
+  .navigation {
+    @apply flex items-center justify-between space-x-4 min-w-[650px] max-w-[800px] mx-auto;
+    &-wrapper {
+      @apply overflow-auto;
+      /* Hide scrollbar for IE, Edge and Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width:    none; /* Firefox */
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    a {
+      @apply text-white transition hover:text-[#f9a156];
+      &.active {
+        @apply text-[#f9a156];
+      }
+    }
+  }
+  .introduction {
+    &:before {
+      content: '';
+      @apply absolute z-10 left-0 top-0 w-0 md:w-[55%] h-full bg-white;
+    }
+  }
+  .values {
+    @apply relative max-w-[780px] mx-auto;
+    &.white {
+      .value-item {
+        h6 {
+          @apply text-primary;
+        }
+        h2 {
+          @apply text-[#F9A156] xl:text-[75px];
+        }
+        p {
+          @apply text-primary;
+        }
+      }
+    }
+    .value-item {
+      @apply relative;
+      &:not(:last-child) {
+        @apply pb-10 md:pb-32 mb-6 md:mb-12;
+        &:before {
+          content:         '';
+          background:      url("../images/icons/dots.svg") no-repeat center center;
+          background-size: contain;
+          @apply absolute left-1/2 bottom-0 h-10 md:h-28 w-[4px];
+        }
+      }
+      h6 {
+        @apply text-[#F9A156];
+      }
+      h2 {
+        @apply mb-4 md:mb-8 text-white;
+        @media screen and (max-width: 567px) {
+          font-size: 40px;
+        }
+      }
+      p {
+        @apply text-white;
+      }
+    }
+  }
+  .goals {
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.05);
+    @apply bg-white p-4 md:p-10 rounded-[5px];
+  }
+  .accordion {
+    .accordion-item {
+      @apply pt-3 md:pt-6 border-t border-t-[#DBD5CD];
+      &:last-child {
+        @apply border-b border-b-[#DBD5CD];
+      }
+      &.opened {
+        .accordion-title {
+          &:before {
+            @apply rotate-0;
+          }
+        }
+        .accordion-content {
+          @apply block;
+        }
+      }
+    }
+    .accordion-title {
+      @apply relative pb-3 md:pb-6 text-base md:text-2xl font-bold cursor-pointer transition-all hover:text-[#94795D];
+      &:before {
+        content:         '';
+        @apply absolute z-10 right-0 top-2 w-3 md:w-5 h-3 md:h-5 rotate-180;
+        background:      url("../images/icons/arrow.svg") no-repeat center center;
+        background-size: contain;
+      }
+    }
+    .accordion-content {
+      @apply hidden;
+      h6 {
+        line-height: 1.86 !important;
+        @apply mb-3 md:mb-5 md:text-[15px] max-w-[950px];
+      }
+      ul {
+        @apply mb-3 md:mb-6 flex flex-wrap justify-between items-start;
+        li {
+          line-height: 1.86 !important;
+          @apply pl-5 relative w-full md:w-[46%] mb-2;
+          &:before {
+            content: '';
+            @apply absolute z-10 left-0 top-2 w-2 h-2 bg-[#94795D] rounded-full;
+          }
+        }
+      }
+    }
+  }
+}

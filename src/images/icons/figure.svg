@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1648px" height="1138px" viewBox="0 0 1648 1138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <polygon id="path-1" points="2.27373675e-13 0 617 0 617 1138 2.27373675e-13 1138"></polygon>
+        <polygon id="path-3" points="0 0 617 0 617 1138 0 1138"></polygon>
+    </defs>
+    <g id="landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.08">
+        <g id="homepage" transform="translate(24.000000, -7739.000000)">
+            <g id="the-year-in-review" transform="translate(-1183.000000, 6248.000000)">
+                <g id="visual" transform="translate(0.000000, 1491.000000)">
+                    <g id="Group-7" transform="translate(1159.000000, 0.000000)">
+                        <path d="M1138,570 C1138,396.579562 997.424875,256 824.009909,256 C650.594944,256 510,396.579562 510,570 C510,743.420438 650.594944,884 824.009909,884 C997.424875,884 1138,743.420438 1138,570" id="Fill-1" fill="#FFFFFF"></path>
+                        <g id="Group-5" transform="translate(1031.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-4"></g>
+                            <path d="M2.27373675e-13,-0.00989487779 C232.140183,84.9673156 397.815926,307.661435 397.815926,569.004947 C397.815926,830.34846 232.140183,1053.04258 2.27373675e-13,1138 C354.965677,1072.17927 617,842.400421 617,569.004947 C617,295.609474 354.965677,65.8108322 2.27373675e-13,-0.00989487779" id="Fill-3" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                        <g id="Group-8">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-7"></g>
+                            <path d="M219.184074,568.990105 C219.184074,307.648865 384.859817,84.956682 617,-0.0197895835 C262.034323,65.8201548 0,295.597009 0,568.990105 C0,842.383201 262.034323,1072.17985 617,1138 C384.859817,1053.02353 219.184074,830.331345 219.184074,568.990105" id="Fill-6" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

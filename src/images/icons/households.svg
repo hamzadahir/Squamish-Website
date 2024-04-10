@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="187px" height="90px" viewBox="0 0 187 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4001438_city_construction_site_under_urban_icon</title>
+    <g id="landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(-1102.000000, -2582.000000)" fill-rule="nonzero">
+            <g id="operational-highlights" transform="translate(0.000000, 1917.000000)">
+                <g id="households" transform="translate(1079.000000, 467.000000)">
+                    <g id="4001438_city_construction_site_under_urban_icon" transform="translate(23.000000, 198.000000)">
+                        <g id="Group-40" transform="translate(78.000000, 2.000000)">
+                            <rect id="Rectangle" fill="#B0C2CC" transform="translate(87.500000, 55.500000) rotate(180.000000) translate(-87.500000, -55.500000) " x="81" y="23" width="13" height="65"></rect>
+                            <rect id="Rectangle" fill="#B0C2CC" x="15" y="23" width="13" height="65"></rect>
+                            <rect id="Rectangle" fill="#6F838C" x="15" y="24" width="13" height="46"></rect>
+                            <rect id="Rectangle" fill="#6F838C" x="81" y="24" width="13" height="46"></rect>
+                            <rect id="Rectangle" fill="#F9A156" x="0" y="0" width="109" height="23"></rect>
+                            <polygon id="Path" fill="#1C1D1B" points="56 23 33.9381402 0 17 0 39.0618598 23"></polygon>
+                            <polygon id="Path" fill="#1C1D1B" points="100 23 77.9381402 0 61 0 83.0618598 23"></polygon>
+                            <rect id="Rectangle" fill="#F9A156" x="0" y="36" width="109" height="23"></rect>
+                            <polygon id="Path" fill="#1C1D1B" points="56 59 33.9381402 36 17 36 39.0618598 59"></polygon>
+                            <polygon id="Path" fill="#1C1D1B" points="100 59 77.9381402 36 61 36 83.0618598 59"></polygon>
+                        </g>
+                        <path d="M33.0769335,2.75618928 L8,74 L66,74 L40.9230665,2.75618928 C40.3407086,1.10563361 38.7669872,0 37,0 C35.2330128,0 33.6592914,1.10563361 33.0769335,2.75618928 Z" id="Path" fill="#F04E36"></path>
+                        <path d="M7.13284795,74 L65.8671521,74 C69.8065152,74 73,77.2564306 73,81.2734413 L73,90 L0,90 L0,81.2734413 C0,77.2564306 3.1934848,74 7.13284795,74 Z" id="Path" fill="#F04E36"></path>
+                        <polygon id="Path" fill="#F9A156" points="22 35 52 35 47.4461498 22 26.5538502 22"></polygon>
+                        <polygon id="Path" fill="#F9A156" points="13 61 61 61 56.472137 48 17.527863 48"></polygon>
+                        <polygon id="Path" fill="#D02F1D" points="8 73 37 73 66 73 64.3316147 69 9.66838535 69"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

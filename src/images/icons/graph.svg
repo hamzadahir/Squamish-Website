@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="341px" viewBox="0 0 341 341" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graph</title>
+    <defs>
+        <polygon id="path-1" points="0 0 64.0443213 0 64.0443213 169.529086 0 169.529086"></polygon>
+        <polygon id="path-3" points="0 0 340 0 340 276.897507 0 276.897507"></polygon>
+        <polygon id="path-5" points="0 0 169.529086 0 169.529086 169.529086 0 169.529086"></polygon>
+    </defs>
+    <g id="landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(-204.000000, -3999.000000)">
+            <g id="financial-highlights" transform="translate(-41.000000, 3271.000000)">
+                <g id="revenue" transform="translate(0.000000, 522.000000)">
+                    <g id="graph" transform="translate(245.000000, 206.000000)">
+                        <g id="Group-14">
+                            <g id="Group-3" transform="translate(106.426593, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M64.0443213,169.529086 L0,12.3441909 C21.0109609,3.92667356 41.3831944,-7.1486347e-05 64.0443213,-7.1486347e-05 L64.0443213,169.529086 Z" id="Fill-1" fill="#CDC8C3" mask="url(#mask-2)"></path>
+                            </g>
+                            <path d="M170.470914,169.529086 C169.669369,170.017497 169.108549,170.017497 168.788454,169.529086 C148.388327,138.401934 117.868815,90.9785903 77.2299169,27.2590534 C86.6498474,21.1359126 96.7714392,16.2991928 107.184671,12.0873875 L170.470914,169.529086 Z" id="Fill-4" fill="#646465"></path>
+                            <path d="M169.529086,169.529086 L37.6731302,62.8130498 C49.4671911,48.2568003 61.4043404,37.5146214 77.1218852,27.3130194 L169.529086,169.529086 Z" id="Fill-6" fill="#9D856C"></path>
+                            <g id="Group-10" transform="translate(0.000000, 63.102493)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="Clip-9"></g>
+                                <path d="M170.470914,106.426593 C189.184841,105.273012 200.537721,104.562462 204.529554,104.29494 C238.117379,102.04398 283.133985,98.9768082 339.579373,95.0934251 C346.127082,188.721394 275.525629,269.929173 181.886071,276.476788 C88.246513,283.023688 7.02868249,212.430972 0.480256155,118.803004 C-2.6624438,73.8611486 9.58871082,35.011149 37.9432463,0 L170.470914,106.426593 Z" id="Fill-8" fill="#D23929" mask="url(#mask-4)"></path>
+                            </g>
+                            <g id="Group-13" transform="translate(170.470914, 0.000000)">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <g id="Clip-12"></g>
+                                <path d="M-2.14146952e-13,170 L-2.14146952e-13,-7.14863475e-05 C90.1025464,-7.14863475e-05 162.823101,68.5320227 169.108459,158.195918 L-2.14146952e-13,170 Z" id="Fill-11" fill="#FDBE63" mask="url(#mask-6)"></path>
+                            </g>
+                        </g>
+                        <circle id="Oval" fill="#FFF2E0" cx="170" cy="170.102493" r="119"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

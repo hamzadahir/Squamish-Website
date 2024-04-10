@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="90px" viewBox="0 0 92 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>play btn</title>
+    <g id="landingpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(-754.000000, -9133.000000)">
+            <g id="about-us" transform="translate(228.500000, 8457.000000)">
+                <g id="video" transform="translate(0.500000, 418.000000)">
+                    <g id="play-btn" transform="translate(526.000000, 258.000000)">
+                        <circle id="Oval" fill="#D23929" cx="45" cy="45" r="45"></circle>
+                        <path d="M59.1222917,42.8625 L38.2422917,30.7802083 C37.9872917,30.634375 37.7247917,30.546875 37.4247917,30.546875 C36.6072917,30.546875 35.9397917,31.203125 35.9397917,32.0052083 L35.9322917,32.0052083 L35.9322917,57.0885417 L35.9397917,57.0885417 C35.9397917,57.890625 36.6072917,58.546875 37.4247917,58.546875 C37.7322917,58.546875 37.9872917,58.4447917 38.2647917,58.2989583 L59.1222917,46.23125 C59.6172917,45.8302083 59.9322917,45.225 59.9322917,44.546875 C59.9322917,43.86875 59.6172917,43.2708333 59.1222917,42.8625 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
